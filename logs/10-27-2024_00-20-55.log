@@ -1,0 +1,13 @@
+10/27/2024 00:20:55 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+10/27/2024 00:20:57 - INFO - root - freeze vision encoder
+10/27/2024 00:21:05 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+10/27/2024 00:21:05 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+10/27/2024 00:21:08 - INFO - root - Loading pretrained projection lyer weights.
+10/27/2024 00:21:08 - INFO - root - Loading pretrained text encoder weights.

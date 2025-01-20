@@ -1,0 +1,180 @@
+11/22/2024 05:09:19 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+11/22/2024 05:09:22 - INFO - root - freeze vision encoder
+11/22/2024 05:09:32 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+11/22/2024 05:09:32 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+11/22/2024 05:09:34 - INFO - root - Loading pretrained projection lyer weights.
+11/22/2024 05:09:34 - INFO - root - Loading pretrained text encoder weights.
+11/22/2024 05:09:35 - INFO - root - Loading pretrained vae weights.
+11/22/2024 05:09:35 - INFO - root - Loading pretrained unet weights.
+11/22/2024 05:09:43 - INFO - root - Using xformers.
+11/22/2024 05:09:43 - INFO - root - Building datasets...
+11/22/2024 05:09:54 - INFO - root - freeze vision encoder
+11/22/2024 05:10:25 - INFO - root - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xl.pth
+11/22/2024 05:10:31 - INFO - __main__ - 
+***** Running training *****
+11/22/2024 05:10:31 - INFO - __main__ -   Num examples = 5
+11/22/2024 05:10:31 - INFO - __main__ -   Num batches each epoch = 2
+11/22/2024 05:10:31 - INFO - __main__ -   Num Epochs = 50
+11/22/2024 05:10:31 - INFO - __main__ -   Instantaneous batch size per device = 3
+11/22/2024 05:10:31 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 3
+11/22/2024 05:10:31 - INFO - __main__ -   Gradient Accumulation steps = 1
+11/22/2024 05:10:31 - INFO - __main__ -   Total optimization steps = 100
+11/22/2024 05:10:31 - INFO - __main__ -   Total parameters number = 1995356906
+11/22/2024 05:10:31 - INFO - __main__ -   Training parameters number = 576349697
+11/22/2024 05:12:19 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+11/22/2024 05:12:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/in_the_jungle/
+11/22/2024 05:12:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/in_the_jungle/
+11/22/2024 05:13:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/in_the_jungle/
+11/22/2024 05:13:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/in_the_jungle/
+11/22/2024 05:13:14 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+11/22/2024 05:13:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/in_the_snow/
+11/22/2024 05:13:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/in_the_snow/
+11/22/2024 05:13:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/in_the_snow/
+11/22/2024 05:14:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/in_the_snow/
+11/22/2024 05:14:08 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+11/22/2024 05:14:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_the_beach/
+11/22/2024 05:14:35 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_the_beach/
+11/22/2024 05:14:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_the_beach/
+11/22/2024 05:15:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_the_beach/
+11/22/2024 05:15:02 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+11/22/2024 05:15:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_a_cobblestone_street/
+11/22/2024 05:15:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_a_cobblestone_street/
+11/22/2024 05:15:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_a_cobblestone_street/
+11/22/2024 05:15:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_a_cobblestone_street/
+11/22/2024 05:15:56 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+11/22/2024 05:16:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_pink_fabric/
+11/22/2024 05:16:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_pink_fabric/
+11/22/2024 05:16:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_pink_fabric/
+11/22/2024 05:16:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_pink_fabric/
+11/22/2024 05:16:51 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+11/22/2024 05:17:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/22/2024 05:17:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/22/2024 05:17:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/22/2024 05:17:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/22/2024 05:17:45 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+11/22/2024 05:17:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_city_in_the_background/
+11/22/2024 05:18:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_city_in_the_background/
+11/22/2024 05:18:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_city_in_the_background/
+11/22/2024 05:18:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_city_in_the_background/
+11/22/2024 05:18:39 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+11/22/2024 05:18:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_mountain_in_the_background/
+11/22/2024 05:19:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_mountain_in_the_background/
+11/22/2024 05:19:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_mountain_in_the_background/
+11/22/2024 05:19:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_mountain_in_the_background/
+11/22/2024 05:19:33 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+11/22/2024 05:19:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/22/2024 05:20:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/22/2024 05:20:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/22/2024 05:20:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/22/2024 05:20:28 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+11/22/2024 05:20:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/22/2024 05:20:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/22/2024 05:21:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/22/2024 05:21:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/22/2024 05:21:22 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+11/22/2024 05:21:35 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/22/2024 05:21:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/22/2024 05:22:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/22/2024 05:22:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/22/2024 05:22:16 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+11/22/2024 05:22:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/22/2024 05:22:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/22/2024 05:22:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/22/2024 05:23:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/22/2024 05:23:10 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+11/22/2024 05:23:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/22/2024 05:23:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/22/2024 05:23:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/22/2024 05:24:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/22/2024 05:24:04 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+11/22/2024 05:24:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/floating_on_top_of_water/
+11/22/2024 05:24:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/floating_on_top_of_water/
+11/22/2024 05:24:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/floating_on_top_of_water/
+11/22/2024 05:24:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/floating_on_top_of_water/
+11/22/2024 05:24:59 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+11/22/2024 05:25:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/22/2024 05:25:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/22/2024 05:25:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/22/2024 05:25:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/22/2024 05:25:53 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+11/22/2024 05:26:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/22/2024 05:26:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/22/2024 05:26:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/22/2024 05:26:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/22/2024 05:26:47 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+11/22/2024 05:27:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_mirror/
+11/22/2024 05:27:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_mirror/
+11/22/2024 05:27:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_mirror/
+11/22/2024 05:27:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_mirror/
+11/22/2024 05:27:41 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+11/22/2024 05:27:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/22/2024 05:28:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/22/2024 05:28:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/22/2024 05:28:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/22/2024 05:28:36 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+11/22/2024 05:28:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_dirt_road/
+11/22/2024 05:29:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_dirt_road/
+11/22/2024 05:29:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_dirt_road/
+11/22/2024 05:29:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_dirt_road/
+11/22/2024 05:29:30 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+11/22/2024 05:29:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_white_rug/
+11/22/2024 05:29:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_white_rug/
+11/22/2024 05:30:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_white_rug/
+11/22/2024 05:30:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/on_top_of_a_white_rug/
+11/22/2024 05:30:24 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+11/22/2024 05:30:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/red/
+11/22/2024 05:30:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/red/
+11/22/2024 05:31:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/red/
+11/22/2024 05:31:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/red/
+11/22/2024 05:31:18 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+11/22/2024 05:31:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/purple/
+11/22/2024 05:31:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/purple/
+11/22/2024 05:31:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/purple/
+11/22/2024 05:32:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/purple/
+11/22/2024 05:32:12 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+11/22/2024 05:32:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/shiny/
+11/22/2024 05:32:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/shiny/
+11/22/2024 05:32:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/shiny/
+11/22/2024 05:33:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/shiny/
+11/22/2024 05:33:06 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+11/22/2024 05:33:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/wet/
+11/22/2024 05:33:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/wet/
+11/22/2024 05:33:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/wet/
+11/22/2024 05:34:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/wet/
+11/22/2024 05:34:01 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+11/22/2024 05:34:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/cube_shaped/
+11/22/2024 05:34:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/cube_shaped/
+11/22/2024 05:34:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/cube_shaped/
+11/22/2024 05:34:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp4/robot_toy/checkpoint-100/images/cube_shaped/

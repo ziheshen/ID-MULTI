@@ -1,0 +1,1403 @@
+07/10/2024 22:02:35 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+07/10/2024 22:02:35 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+07/10/2024 22:02:37 - INFO - root - freeze vision encoder
+07/10/2024 22:02:42 - INFO - root - Loaded ViT-H-14 model config.
+07/10/2024 22:02:47 - INFO - root - Loading pretrained ViT-H-14 weights (laion2b_s32b_b79k).
+07/10/2024 22:02:51 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/diffusers/configuration_utils.py:215: FutureWarning: It is deprecated to pass a pretrained model name or path to `from_config`.If you were trying to load a scheduler, please use <class 'diffusers.schedulers.scheduling_ddpm.DDPMScheduler'>.from_pretrained(...) instead. Otherwise, please make sure to pass a configuration dictionary instead. This functionality will be removed in v1.0.0.
+  deprecate("config-passed-as-path", "1.0.0", deprecation_message, standard_warn=False)
+
+07/10/2024 22:02:51 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+07/10/2024 22:02:51 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+07/10/2024 22:02:52 - INFO - root - Loading pretrained projection lyer weights.
+07/10/2024 22:02:52 - INFO - root - Loading pretrained text encoder weights.
+07/10/2024 22:02:53 - INFO - root - Loading pretrained vae weights.
+07/10/2024 22:02:53 - INFO - root - Loading pretrained unet weights.
+07/10/2024 22:02:57 - INFO - root - Using xformers.
+07/10/2024 22:02:57 - INFO - root - Building datasets...
+07/10/2024 22:02:58 - INFO - __main__ - 
+***** Running training *****
+07/10/2024 22:02:58 - INFO - __main__ -   Num examples = 4
+07/10/2024 22:02:58 - INFO - __main__ -   Num batches each epoch = 2
+07/10/2024 22:02:58 - INFO - __main__ -   Num Epochs = 80
+07/10/2024 22:02:58 - INFO - __main__ -   Instantaneous batch size per device = 2
+07/10/2024 22:02:58 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 2
+07/10/2024 22:02:58 - INFO - __main__ -   Gradient Accumulation steps = 1
+07/10/2024 22:02:58 - INFO - __main__ -   Total optimization steps = 160
+07/10/2024 22:02:59 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/torch/backends/cuda/__init__.py:342: FutureWarning: torch.backends.cuda.sdp_kernel() is deprecated. In the future, this context manager will be removed. Please see, torch.nn.attention.sdpa_kernel() for the new context manager, with updated signature.
+  warnings.warn(
+
+07/10/2024 22:03:01 - INFO - root - {'loss': 0.28412336111068726, 'lr': 0.0001}
+07/10/2024 22:03:03 - INFO - root - {'loss': 0.2036820650100708, 'lr': 0.0001}
+07/10/2024 22:03:05 - INFO - root - {'loss': 0.5761133432388306, 'lr': 0.0001}
+07/10/2024 22:03:07 - INFO - root - {'loss': -0.01964697614312172, 'lr': 0.0001}
+07/10/2024 22:03:09 - INFO - root - {'loss': 0.0462816059589386, 'lr': 0.0001}
+07/10/2024 22:03:11 - INFO - root - {'loss': 0.23532097041606903, 'lr': 0.0001}
+07/10/2024 22:03:13 - INFO - root - {'loss': 0.014581279829144478, 'lr': 0.0001}
+07/10/2024 22:03:15 - INFO - root - {'loss': 0.1671147644519806, 'lr': 0.0001}
+07/10/2024 22:03:18 - INFO - root - {'loss': 0.29150617122650146, 'lr': 0.0001}
+07/10/2024 22:03:20 - INFO - root - {'loss': 0.1491064429283142, 'lr': 0.0001}
+07/10/2024 22:03:22 - INFO - root - {'loss': 0.05793052911758423, 'lr': 0.0001}
+07/10/2024 22:03:24 - INFO - root - {'loss': 0.04473145306110382, 'lr': 0.0001}
+07/10/2024 22:03:26 - INFO - root - {'loss': 0.24647335708141327, 'lr': 0.0001}
+07/10/2024 22:03:28 - INFO - root - {'loss': 0.09649906307458878, 'lr': 0.0001}
+07/10/2024 22:03:30 - INFO - root - {'loss': 0.10653312504291534, 'lr': 0.0001}
+07/10/2024 22:03:32 - INFO - root - {'loss': 0.1355818212032318, 'lr': 0.0001}
+07/10/2024 22:03:34 - INFO - root - {'loss': 0.30570441484451294, 'lr': 0.0001}
+07/10/2024 22:03:36 - INFO - root - {'loss': 0.11985520273447037, 'lr': 0.0001}
+07/10/2024 22:03:39 - INFO - root - {'loss': 0.062187738716602325, 'lr': 0.0001}
+07/10/2024 22:03:41 - INFO - root - {'loss': 0.20885403454303741, 'lr': 0.0001}
+07/10/2024 22:03:41 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+07/10/2024 22:03:41 - WARNING - py.warnings - /shenzihe/multi_BlipDisenBooth/multi_BD.py:646: FutureWarning: Accessing config attribute `in_channels` directly via 'UNet2DConditionModel' object attribute is deprecated. Please access 'in_channels' over 'UNet2DConditionModel's config object instead, e.g. 'unet.config.in_channels'.
+  (1, self.unet.in_channels, height // 8, width // 8),
+
+07/10/2024 22:03:41 - WARNING - py.warnings - /shenzihe/multi_BlipDisenBooth/multi_BD.py:652: FutureWarning: Accessing config attribute `in_channels` directly via 'UNet2DConditionModel' object attribute is deprecated. Please access 'in_channels' over 'UNet2DConditionModel's config object instead, e.g. 'unet.config.in_channels'.
+  self.unet.in_channels,
+
+07/10/2024 22:03:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/in_the_jungle/
+07/10/2024 22:04:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/in_the_jungle/
+07/10/2024 22:04:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/in_the_jungle/
+07/10/2024 22:04:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/in_the_jungle/
+07/10/2024 22:04:34 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+07/10/2024 22:04:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/in_the_snow/
+07/10/2024 22:05:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/in_the_snow/
+07/10/2024 22:05:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/in_the_snow/
+07/10/2024 22:05:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/in_the_snow/
+07/10/2024 22:05:27 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+07/10/2024 22:05:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_the_beach/
+07/10/2024 22:05:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_the_beach/
+07/10/2024 22:06:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_the_beach/
+07/10/2024 22:06:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_the_beach/
+07/10/2024 22:06:20 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+07/10/2024 22:06:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_a_cobblestone_street/
+07/10/2024 22:06:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_a_cobblestone_street/
+07/10/2024 22:07:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_a_cobblestone_street/
+07/10/2024 22:07:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_a_cobblestone_street/
+07/10/2024 22:07:13 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+07/10/2024 22:07:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_pink_fabric/
+07/10/2024 22:07:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_pink_fabric/
+07/10/2024 22:07:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_pink_fabric/
+07/10/2024 22:08:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_pink_fabric/
+07/10/2024 22:08:07 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+07/10/2024 22:08:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_wooden_floor/
+07/10/2024 22:08:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_wooden_floor/
+07/10/2024 22:08:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_wooden_floor/
+07/10/2024 22:09:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_wooden_floor/
+07/10/2024 22:09:00 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+07/10/2024 22:09:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_city_in_the_background/
+07/10/2024 22:09:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_city_in_the_background/
+07/10/2024 22:09:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_city_in_the_background/
+07/10/2024 22:09:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_city_in_the_background/
+07/10/2024 22:09:53 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+07/10/2024 22:10:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_mountain_in_the_background/
+07/10/2024 22:10:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_mountain_in_the_background/
+07/10/2024 22:10:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_mountain_in_the_background/
+07/10/2024 22:10:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_mountain_in_the_background/
+07/10/2024 22:10:46 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+07/10/2024 22:11:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_blue_house_in_the_background/
+07/10/2024 22:11:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_blue_house_in_the_background/
+07/10/2024 22:11:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_blue_house_in_the_background/
+07/10/2024 22:11:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_blue_house_in_the_background/
+07/10/2024 22:11:39 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+07/10/2024 22:11:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:12:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:12:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:12:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:12:33 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+07/10/2024 22:12:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:12:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:13:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:13:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:13:26 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+07/10/2024 22:13:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 22:13:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 22:14:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 22:14:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 22:14:19 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+07/10/2024 22:14:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 22:14:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 22:14:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 22:15:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 22:15:12 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+07/10/2024 22:15:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/floating_on_top_of_water/
+07/10/2024 22:15:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/floating_on_top_of_water/
+07/10/2024 22:15:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/floating_on_top_of_water/
+07/10/2024 22:16:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/floating_on_top_of_water/
+07/10/2024 22:16:06 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+07/10/2024 22:16:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/floating_in_an_ocean_of_milk/
+07/10/2024 22:16:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/floating_in_an_ocean_of_milk/
+07/10/2024 22:16:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/floating_in_an_ocean_of_milk/
+07/10/2024 22:16:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/floating_in_an_ocean_of_milk/
+07/10/2024 22:16:59 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+07/10/2024 22:17:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 22:17:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 22:17:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 22:17:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 22:17:52 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+07/10/2024 22:18:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_mirror/
+07/10/2024 22:18:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_mirror/
+07/10/2024 22:18:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_mirror/
+07/10/2024 22:18:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_mirror/
+07/10/2024 22:18:45 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+07/10/2024 22:18:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 22:19:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 22:19:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 22:19:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 22:19:39 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+07/10/2024 22:19:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_dirt_road/
+07/10/2024 22:20:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_dirt_road/
+07/10/2024 22:20:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_dirt_road/
+07/10/2024 22:20:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_dirt_road/
+07/10/2024 22:20:32 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+07/10/2024 22:20:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_white_rug/
+07/10/2024 22:20:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_white_rug/
+07/10/2024 22:21:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_white_rug/
+07/10/2024 22:21:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/on_top_of_a_white_rug/
+07/10/2024 22:21:25 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+07/10/2024 22:21:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/red/
+07/10/2024 22:21:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/red/
+07/10/2024 22:22:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/red/
+07/10/2024 22:22:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/red/
+07/10/2024 22:22:18 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+07/10/2024 22:22:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/purple/
+07/10/2024 22:22:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/purple/
+07/10/2024 22:22:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/purple/
+07/10/2024 22:23:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/purple/
+07/10/2024 22:23:11 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+07/10/2024 22:23:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/shiny/
+07/10/2024 22:23:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/shiny/
+07/10/2024 22:23:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/shiny/
+07/10/2024 22:24:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/shiny/
+07/10/2024 22:24:05 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+07/10/2024 22:24:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/wet/
+07/10/2024 22:24:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/wet/
+07/10/2024 22:24:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/wet/
+07/10/2024 22:24:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/wet/
+07/10/2024 22:24:58 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+07/10/2024 22:25:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/cube_shaped/
+07/10/2024 22:25:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/cube_shaped/
+07/10/2024 22:25:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/cube_shaped/
+07/10/2024 22:25:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-20/images/cube_shaped/
+07/10/2024 22:25:53 - INFO - root - {'loss': 0.0357377827167511, 'lr': 0.0001}
+07/10/2024 22:25:55 - INFO - root - {'loss': 0.46229252219200134, 'lr': 0.0001}
+07/10/2024 22:25:58 - INFO - root - {'loss': 0.1951519250869751, 'lr': 0.0001}
+07/10/2024 22:26:00 - INFO - root - {'loss': 0.14387570321559906, 'lr': 0.0001}
+07/10/2024 22:26:02 - INFO - root - {'loss': 0.2464519739151001, 'lr': 0.0001}
+07/10/2024 22:26:04 - INFO - root - {'loss': 0.11384417116641998, 'lr': 0.0001}
+07/10/2024 22:26:06 - INFO - root - {'loss': 0.10192649811506271, 'lr': 0.0001}
+07/10/2024 22:26:08 - INFO - root - {'loss': 0.5603777766227722, 'lr': 0.0001}
+07/10/2024 22:26:10 - INFO - root - {'loss': 0.5377644896507263, 'lr': 0.0001}
+07/10/2024 22:26:12 - INFO - root - {'loss': 0.2675536870956421, 'lr': 0.0001}
+07/10/2024 22:26:15 - INFO - root - {'loss': 0.17883867025375366, 'lr': 0.0001}
+07/10/2024 22:26:17 - INFO - root - {'loss': 0.25919926166534424, 'lr': 0.0001}
+07/10/2024 22:26:19 - INFO - root - {'loss': 0.2104354202747345, 'lr': 0.0001}
+07/10/2024 22:26:21 - INFO - root - {'loss': 0.013049663975834846, 'lr': 0.0001}
+07/10/2024 22:26:23 - INFO - root - {'loss': 0.23353414237499237, 'lr': 0.0001}
+07/10/2024 22:26:25 - INFO - root - {'loss': 0.09577648341655731, 'lr': 0.0001}
+07/10/2024 22:26:27 - INFO - root - {'loss': 0.6286576390266418, 'lr': 0.0001}
+07/10/2024 22:26:29 - INFO - root - {'loss': 0.5902453064918518, 'lr': 0.0001}
+07/10/2024 22:26:32 - INFO - root - {'loss': 0.1439676731824875, 'lr': 0.0001}
+07/10/2024 22:26:34 - INFO - root - {'loss': 0.3612159490585327, 'lr': 0.0001}
+07/10/2024 22:26:34 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+07/10/2024 22:26:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/in_the_jungle/
+07/10/2024 22:27:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/in_the_jungle/
+07/10/2024 22:27:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/in_the_jungle/
+07/10/2024 22:27:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/in_the_jungle/
+07/10/2024 22:27:27 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+07/10/2024 22:27:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/in_the_snow/
+07/10/2024 22:27:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/in_the_snow/
+07/10/2024 22:28:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/in_the_snow/
+07/10/2024 22:28:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/in_the_snow/
+07/10/2024 22:28:20 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+07/10/2024 22:28:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_the_beach/
+07/10/2024 22:28:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_the_beach/
+07/10/2024 22:29:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_the_beach/
+07/10/2024 22:29:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_the_beach/
+07/10/2024 22:29:13 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+07/10/2024 22:29:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_a_cobblestone_street/
+07/10/2024 22:29:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_a_cobblestone_street/
+07/10/2024 22:29:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_a_cobblestone_street/
+07/10/2024 22:30:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_a_cobblestone_street/
+07/10/2024 22:30:06 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+07/10/2024 22:30:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_pink_fabric/
+07/10/2024 22:30:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_pink_fabric/
+07/10/2024 22:30:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_pink_fabric/
+07/10/2024 22:30:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_pink_fabric/
+07/10/2024 22:30:59 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+07/10/2024 22:31:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_wooden_floor/
+07/10/2024 22:31:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_wooden_floor/
+07/10/2024 22:31:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_wooden_floor/
+07/10/2024 22:31:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_wooden_floor/
+07/10/2024 22:31:53 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+07/10/2024 22:32:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_city_in_the_background/
+07/10/2024 22:32:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_city_in_the_background/
+07/10/2024 22:32:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_city_in_the_background/
+07/10/2024 22:32:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_city_in_the_background/
+07/10/2024 22:32:46 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+07/10/2024 22:32:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_mountain_in_the_background/
+07/10/2024 22:33:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_mountain_in_the_background/
+07/10/2024 22:33:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_mountain_in_the_background/
+07/10/2024 22:33:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_mountain_in_the_background/
+07/10/2024 22:33:39 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+07/10/2024 22:33:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_blue_house_in_the_background/
+07/10/2024 22:34:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_blue_house_in_the_background/
+07/10/2024 22:34:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_blue_house_in_the_background/
+07/10/2024 22:34:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_blue_house_in_the_background/
+07/10/2024 22:34:32 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+07/10/2024 22:34:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:34:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:35:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:35:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:35:26 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+07/10/2024 22:35:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:35:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:36:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:36:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:36:19 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+07/10/2024 22:36:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 22:36:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 22:36:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 22:37:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 22:37:12 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+07/10/2024 22:37:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 22:37:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 22:37:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 22:38:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 22:38:05 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+07/10/2024 22:38:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/floating_on_top_of_water/
+07/10/2024 22:38:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/floating_on_top_of_water/
+07/10/2024 22:38:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/floating_on_top_of_water/
+07/10/2024 22:38:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/floating_on_top_of_water/
+07/10/2024 22:38:59 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+07/10/2024 22:39:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/floating_in_an_ocean_of_milk/
+07/10/2024 22:39:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/floating_in_an_ocean_of_milk/
+07/10/2024 22:39:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/floating_in_an_ocean_of_milk/
+07/10/2024 22:39:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/floating_in_an_ocean_of_milk/
+07/10/2024 22:39:52 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+07/10/2024 22:40:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 22:40:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 22:40:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 22:40:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 22:40:45 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+07/10/2024 22:40:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_mirror/
+07/10/2024 22:41:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_mirror/
+07/10/2024 22:41:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_mirror/
+07/10/2024 22:41:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_mirror/
+07/10/2024 22:41:38 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+07/10/2024 22:41:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 22:42:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 22:42:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 22:42:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 22:42:31 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+07/10/2024 22:42:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_dirt_road/
+07/10/2024 22:42:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_dirt_road/
+07/10/2024 22:43:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_dirt_road/
+07/10/2024 22:43:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_dirt_road/
+07/10/2024 22:43:24 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+07/10/2024 22:43:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_white_rug/
+07/10/2024 22:43:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_white_rug/
+07/10/2024 22:44:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_white_rug/
+07/10/2024 22:44:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/on_top_of_a_white_rug/
+07/10/2024 22:44:18 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+07/10/2024 22:44:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/red/
+07/10/2024 22:44:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/red/
+07/10/2024 22:44:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/red/
+07/10/2024 22:45:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/red/
+07/10/2024 22:45:11 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+07/10/2024 22:45:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/purple/
+07/10/2024 22:45:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/purple/
+07/10/2024 22:45:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/purple/
+07/10/2024 22:46:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/purple/
+07/10/2024 22:46:04 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+07/10/2024 22:46:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/shiny/
+07/10/2024 22:46:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/shiny/
+07/10/2024 22:46:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/shiny/
+07/10/2024 22:46:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/shiny/
+07/10/2024 22:46:57 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+07/10/2024 22:47:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/wet/
+07/10/2024 22:47:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/wet/
+07/10/2024 22:47:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/wet/
+07/10/2024 22:47:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/wet/
+07/10/2024 22:47:50 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+07/10/2024 22:48:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/cube_shaped/
+07/10/2024 22:48:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/cube_shaped/
+07/10/2024 22:48:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/cube_shaped/
+07/10/2024 22:48:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-40/images/cube_shaped/
+07/10/2024 22:48:46 - INFO - root - {'loss': 0.14360085129737854, 'lr': 0.0001}
+07/10/2024 22:48:48 - INFO - root - {'loss': 0.12410610914230347, 'lr': 0.0001}
+07/10/2024 22:48:50 - INFO - root - {'loss': 0.32666388154029846, 'lr': 0.0001}
+07/10/2024 22:48:52 - INFO - root - {'loss': 0.07043164223432541, 'lr': 0.0001}
+07/10/2024 22:48:54 - INFO - root - {'loss': 0.16521857678890228, 'lr': 0.0001}
+07/10/2024 22:48:56 - INFO - root - {'loss': 0.18268564343452454, 'lr': 0.0001}
+07/10/2024 22:48:58 - INFO - root - {'loss': 0.09329113364219666, 'lr': 0.0001}
+07/10/2024 22:49:01 - INFO - root - {'loss': 0.2180505394935608, 'lr': 0.0001}
+07/10/2024 22:49:03 - INFO - root - {'loss': 0.2220541536808014, 'lr': 0.0001}
+07/10/2024 22:49:05 - INFO - root - {'loss': 0.14934180676937103, 'lr': 0.0001}
+07/10/2024 22:49:07 - INFO - root - {'loss': 0.20977208018302917, 'lr': 0.0001}
+07/10/2024 22:49:09 - INFO - root - {'loss': 0.3551458716392517, 'lr': 0.0001}
+07/10/2024 22:49:11 - INFO - root - {'loss': 0.12191233783960342, 'lr': 0.0001}
+07/10/2024 22:49:13 - INFO - root - {'loss': 0.33851343393325806, 'lr': 0.0001}
+07/10/2024 22:49:15 - INFO - root - {'loss': 0.17977958917617798, 'lr': 0.0001}
+07/10/2024 22:49:17 - INFO - root - {'loss': 0.16445134580135345, 'lr': 0.0001}
+07/10/2024 22:49:20 - INFO - root - {'loss': 0.25040826201438904, 'lr': 0.0001}
+07/10/2024 22:49:22 - INFO - root - {'loss': 0.05956130474805832, 'lr': 0.0001}
+07/10/2024 22:49:24 - INFO - root - {'loss': 0.2371879667043686, 'lr': 0.0001}
+07/10/2024 22:49:26 - INFO - root - {'loss': 0.10751999169588089, 'lr': 0.0001}
+07/10/2024 22:49:26 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+07/10/2024 22:49:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/in_the_jungle/
+07/10/2024 22:49:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/in_the_jungle/
+07/10/2024 22:50:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/in_the_jungle/
+07/10/2024 22:50:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/in_the_jungle/
+07/10/2024 22:50:19 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+07/10/2024 22:50:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/in_the_snow/
+07/10/2024 22:50:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/in_the_snow/
+07/10/2024 22:50:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/in_the_snow/
+07/10/2024 22:51:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/in_the_snow/
+07/10/2024 22:51:12 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+07/10/2024 22:51:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_the_beach/
+07/10/2024 22:51:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_the_beach/
+07/10/2024 22:51:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_the_beach/
+07/10/2024 22:52:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_the_beach/
+07/10/2024 22:52:05 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+07/10/2024 22:52:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_a_cobblestone_street/
+07/10/2024 22:52:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_a_cobblestone_street/
+07/10/2024 22:52:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_a_cobblestone_street/
+07/10/2024 22:52:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_a_cobblestone_street/
+07/10/2024 22:52:59 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+07/10/2024 22:53:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_pink_fabric/
+07/10/2024 22:53:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_pink_fabric/
+07/10/2024 22:53:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_pink_fabric/
+07/10/2024 22:53:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_pink_fabric/
+07/10/2024 22:53:52 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+07/10/2024 22:54:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_wooden_floor/
+07/10/2024 22:54:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_wooden_floor/
+07/10/2024 22:54:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_wooden_floor/
+07/10/2024 22:54:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_wooden_floor/
+07/10/2024 22:54:45 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+07/10/2024 22:54:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_city_in_the_background/
+07/10/2024 22:55:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_city_in_the_background/
+07/10/2024 22:55:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_city_in_the_background/
+07/10/2024 22:55:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_city_in_the_background/
+07/10/2024 22:55:38 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+07/10/2024 22:55:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_mountain_in_the_background/
+07/10/2024 22:56:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_mountain_in_the_background/
+07/10/2024 22:56:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_mountain_in_the_background/
+07/10/2024 22:56:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_mountain_in_the_background/
+07/10/2024 22:56:31 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+07/10/2024 22:56:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_blue_house_in_the_background/
+07/10/2024 22:56:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_blue_house_in_the_background/
+07/10/2024 22:57:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_blue_house_in_the_background/
+07/10/2024 22:57:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_blue_house_in_the_background/
+07/10/2024 22:57:24 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+07/10/2024 22:57:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:57:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:58:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:58:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 22:58:18 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+07/10/2024 22:58:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:58:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:58:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:59:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_wheat_field_in_the_background/
+07/10/2024 22:59:11 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+07/10/2024 22:59:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 22:59:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 22:59:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 23:00:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 23:00:05 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+07/10/2024 23:00:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:00:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:00:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:00:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:00:58 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+07/10/2024 23:01:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/floating_on_top_of_water/
+07/10/2024 23:01:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/floating_on_top_of_water/
+07/10/2024 23:01:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/floating_on_top_of_water/
+07/10/2024 23:01:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/floating_on_top_of_water/
+07/10/2024 23:01:51 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+07/10/2024 23:02:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:02:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:02:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:02:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:02:44 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+07/10/2024 23:02:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:03:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:03:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:03:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:03:37 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+07/10/2024 23:03:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_mirror/
+07/10/2024 23:04:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_mirror/
+07/10/2024 23:04:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_mirror/
+07/10/2024 23:04:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_mirror/
+07/10/2024 23:04:31 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+07/10/2024 23:04:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:04:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:05:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:05:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:05:24 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+07/10/2024 23:05:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_dirt_road/
+07/10/2024 23:05:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_dirt_road/
+07/10/2024 23:06:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_dirt_road/
+07/10/2024 23:06:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_dirt_road/
+07/10/2024 23:06:17 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+07/10/2024 23:06:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_white_rug/
+07/10/2024 23:06:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_white_rug/
+07/10/2024 23:06:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_white_rug/
+07/10/2024 23:07:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/on_top_of_a_white_rug/
+07/10/2024 23:07:11 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+07/10/2024 23:07:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/red/
+07/10/2024 23:07:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/red/
+07/10/2024 23:07:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/red/
+07/10/2024 23:08:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/red/
+07/10/2024 23:08:04 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+07/10/2024 23:08:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/purple/
+07/10/2024 23:08:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/purple/
+07/10/2024 23:08:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/purple/
+07/10/2024 23:08:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/purple/
+07/10/2024 23:08:57 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+07/10/2024 23:09:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/shiny/
+07/10/2024 23:09:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/shiny/
+07/10/2024 23:09:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/shiny/
+07/10/2024 23:09:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/shiny/
+07/10/2024 23:09:51 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+07/10/2024 23:10:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/wet/
+07/10/2024 23:10:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/wet/
+07/10/2024 23:10:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/wet/
+07/10/2024 23:10:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/wet/
+07/10/2024 23:10:44 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+07/10/2024 23:10:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/cube_shaped/
+07/10/2024 23:11:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/cube_shaped/
+07/10/2024 23:11:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/cube_shaped/
+07/10/2024 23:11:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-60/images/cube_shaped/
+07/10/2024 23:11:39 - INFO - root - {'loss': 0.09086267650127411, 'lr': 0.0001}
+07/10/2024 23:11:41 - INFO - root - {'loss': 0.4556792676448822, 'lr': 0.0001}
+07/10/2024 23:11:43 - INFO - root - {'loss': 0.1807524859905243, 'lr': 0.0001}
+07/10/2024 23:11:45 - INFO - root - {'loss': 0.16647587716579437, 'lr': 0.0001}
+07/10/2024 23:11:48 - INFO - root - {'loss': 0.19692006707191467, 'lr': 0.0001}
+07/10/2024 23:11:50 - INFO - root - {'loss': 0.12674778699874878, 'lr': 0.0001}
+07/10/2024 23:11:52 - INFO - root - {'loss': 0.26629412174224854, 'lr': 0.0001}
+07/10/2024 23:11:54 - INFO - root - {'loss': 0.07671983540058136, 'lr': 0.0001}
+07/10/2024 23:11:56 - INFO - root - {'loss': 0.24721352756023407, 'lr': 0.0001}
+07/10/2024 23:11:58 - INFO - root - {'loss': 0.1425780951976776, 'lr': 0.0001}
+07/10/2024 23:12:00 - INFO - root - {'loss': 0.18290303647518158, 'lr': 0.0001}
+07/10/2024 23:12:02 - INFO - root - {'loss': 0.16706369817256927, 'lr': 0.0001}
+07/10/2024 23:12:05 - INFO - root - {'loss': 0.24432067573070526, 'lr': 0.0001}
+07/10/2024 23:12:07 - INFO - root - {'loss': 0.12743723392486572, 'lr': 0.0001}
+07/10/2024 23:12:09 - INFO - root - {'loss': 0.30730658769607544, 'lr': 0.0001}
+07/10/2024 23:12:11 - INFO - root - {'loss': 0.25735098123550415, 'lr': 0.0001}
+07/10/2024 23:12:13 - INFO - root - {'loss': 0.1647636890411377, 'lr': 0.0001}
+07/10/2024 23:12:15 - INFO - root - {'loss': 0.22291618585586548, 'lr': 0.0001}
+07/10/2024 23:12:17 - INFO - root - {'loss': 0.2067350596189499, 'lr': 0.0001}
+07/10/2024 23:12:19 - INFO - root - {'loss': 0.1894015371799469, 'lr': 0.0001}
+07/10/2024 23:12:19 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+07/10/2024 23:12:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/in_the_jungle/
+07/10/2024 23:12:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/in_the_jungle/
+07/10/2024 23:12:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/in_the_jungle/
+07/10/2024 23:13:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/in_the_jungle/
+07/10/2024 23:13:13 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+07/10/2024 23:13:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/in_the_snow/
+07/10/2024 23:13:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/in_the_snow/
+07/10/2024 23:13:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/in_the_snow/
+07/10/2024 23:14:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/in_the_snow/
+07/10/2024 23:14:06 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+07/10/2024 23:14:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_the_beach/
+07/10/2024 23:14:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_the_beach/
+07/10/2024 23:14:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_the_beach/
+07/10/2024 23:14:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_the_beach/
+07/10/2024 23:14:59 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+07/10/2024 23:15:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_a_cobblestone_street/
+07/10/2024 23:15:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_a_cobblestone_street/
+07/10/2024 23:15:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_a_cobblestone_street/
+07/10/2024 23:15:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_a_cobblestone_street/
+07/10/2024 23:15:52 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+07/10/2024 23:16:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_pink_fabric/
+07/10/2024 23:16:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_pink_fabric/
+07/10/2024 23:16:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_pink_fabric/
+07/10/2024 23:16:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_pink_fabric/
+07/10/2024 23:16:46 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+07/10/2024 23:16:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_wooden_floor/
+07/10/2024 23:17:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_wooden_floor/
+07/10/2024 23:17:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_wooden_floor/
+07/10/2024 23:17:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_wooden_floor/
+07/10/2024 23:17:39 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+07/10/2024 23:17:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_city_in_the_background/
+07/10/2024 23:18:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_city_in_the_background/
+07/10/2024 23:18:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_city_in_the_background/
+07/10/2024 23:18:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_city_in_the_background/
+07/10/2024 23:18:32 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+07/10/2024 23:18:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_mountain_in_the_background/
+07/10/2024 23:18:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_mountain_in_the_background/
+07/10/2024 23:19:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_mountain_in_the_background/
+07/10/2024 23:19:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_mountain_in_the_background/
+07/10/2024 23:19:25 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+07/10/2024 23:19:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_blue_house_in_the_background/
+07/10/2024 23:19:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_blue_house_in_the_background/
+07/10/2024 23:20:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_blue_house_in_the_background/
+07/10/2024 23:20:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_blue_house_in_the_background/
+07/10/2024 23:20:19 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+07/10/2024 23:20:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 23:20:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 23:20:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 23:21:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 23:21:12 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+07/10/2024 23:21:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_wheat_field_in_the_background/
+07/10/2024 23:21:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_wheat_field_in_the_background/
+07/10/2024 23:21:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_wheat_field_in_the_background/
+07/10/2024 23:22:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_wheat_field_in_the_background/
+07/10/2024 23:22:05 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+07/10/2024 23:22:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 23:22:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 23:22:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 23:22:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 23:22:58 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+07/10/2024 23:23:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:23:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:23:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:23:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:23:52 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+07/10/2024 23:24:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/floating_on_top_of_water/
+07/10/2024 23:24:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/floating_on_top_of_water/
+07/10/2024 23:24:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/floating_on_top_of_water/
+07/10/2024 23:24:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/floating_on_top_of_water/
+07/10/2024 23:24:45 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+07/10/2024 23:24:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:25:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:25:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:25:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:25:38 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+07/10/2024 23:25:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:26:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:26:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:26:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:26:31 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+07/10/2024 23:26:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_mirror/
+07/10/2024 23:26:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_mirror/
+07/10/2024 23:27:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_mirror/
+07/10/2024 23:27:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_mirror/
+07/10/2024 23:27:24 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+07/10/2024 23:27:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:27:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:28:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:28:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:28:17 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+07/10/2024 23:28:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_dirt_road/
+07/10/2024 23:28:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_dirt_road/
+07/10/2024 23:28:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_dirt_road/
+07/10/2024 23:29:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_dirt_road/
+07/10/2024 23:29:10 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+07/10/2024 23:29:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_white_rug/
+07/10/2024 23:29:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_white_rug/
+07/10/2024 23:29:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_white_rug/
+07/10/2024 23:30:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/on_top_of_a_white_rug/
+07/10/2024 23:30:04 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+07/10/2024 23:30:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/red/
+07/10/2024 23:30:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/red/
+07/10/2024 23:30:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/red/
+07/10/2024 23:30:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/red/
+07/10/2024 23:30:57 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+07/10/2024 23:31:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/purple/
+07/10/2024 23:31:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/purple/
+07/10/2024 23:31:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/purple/
+07/10/2024 23:31:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/purple/
+07/10/2024 23:31:50 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+07/10/2024 23:32:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/shiny/
+07/10/2024 23:32:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/shiny/
+07/10/2024 23:32:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/shiny/
+07/10/2024 23:32:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/shiny/
+07/10/2024 23:32:43 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+07/10/2024 23:32:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/wet/
+07/10/2024 23:33:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/wet/
+07/10/2024 23:33:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/wet/
+07/10/2024 23:33:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/wet/
+07/10/2024 23:33:37 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+07/10/2024 23:33:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/cube_shaped/
+07/10/2024 23:34:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/cube_shaped/
+07/10/2024 23:34:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/cube_shaped/
+07/10/2024 23:34:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-80/images/cube_shaped/
+07/10/2024 23:34:32 - INFO - root - {'loss': 0.24381454288959503, 'lr': 0.0001}
+07/10/2024 23:34:34 - INFO - root - {'loss': 0.2352060079574585, 'lr': 0.0001}
+07/10/2024 23:34:36 - INFO - root - {'loss': 0.34677866101264954, 'lr': 0.0001}
+07/10/2024 23:34:38 - INFO - root - {'loss': 0.42144346237182617, 'lr': 0.0001}
+07/10/2024 23:34:41 - INFO - root - {'loss': 0.21583594381809235, 'lr': 0.0001}
+07/10/2024 23:34:43 - INFO - root - {'loss': 0.14181779325008392, 'lr': 0.0001}
+07/10/2024 23:34:45 - INFO - root - {'loss': 0.16413971781730652, 'lr': 0.0001}
+07/10/2024 23:34:47 - INFO - root - {'loss': 0.19234400987625122, 'lr': 0.0001}
+07/10/2024 23:34:49 - INFO - root - {'loss': 0.36370566487312317, 'lr': 0.0001}
+07/10/2024 23:34:51 - INFO - root - {'loss': 0.27671143412590027, 'lr': 0.0001}
+07/10/2024 23:34:53 - INFO - root - {'loss': 0.37824273109436035, 'lr': 0.0001}
+07/10/2024 23:34:55 - INFO - root - {'loss': 0.14627443253993988, 'lr': 0.0001}
+07/10/2024 23:34:58 - INFO - root - {'loss': 0.3090090751647949, 'lr': 0.0001}
+07/10/2024 23:35:00 - INFO - root - {'loss': 0.1432560831308365, 'lr': 0.0001}
+07/10/2024 23:35:02 - INFO - root - {'loss': 0.2954773008823395, 'lr': 0.0001}
+07/10/2024 23:35:04 - INFO - root - {'loss': 0.2037496268749237, 'lr': 0.0001}
+07/10/2024 23:35:06 - INFO - root - {'loss': 0.29215994477272034, 'lr': 0.0001}
+07/10/2024 23:35:08 - INFO - root - {'loss': 0.24054653942584991, 'lr': 0.0001}
+07/10/2024 23:35:10 - INFO - root - {'loss': 0.15568944811820984, 'lr': 0.0001}
+07/10/2024 23:35:12 - INFO - root - {'loss': 0.15051300823688507, 'lr': 0.0001}
+07/10/2024 23:35:12 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+07/10/2024 23:35:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/in_the_jungle/
+07/10/2024 23:35:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/in_the_jungle/
+07/10/2024 23:35:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/in_the_jungle/
+07/10/2024 23:36:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/in_the_jungle/
+07/10/2024 23:36:06 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+07/10/2024 23:36:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/in_the_snow/
+07/10/2024 23:36:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/in_the_snow/
+07/10/2024 23:36:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/in_the_snow/
+07/10/2024 23:36:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/in_the_snow/
+07/10/2024 23:36:59 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+07/10/2024 23:37:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_the_beach/
+07/10/2024 23:37:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_the_beach/
+07/10/2024 23:37:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_the_beach/
+07/10/2024 23:37:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_the_beach/
+07/10/2024 23:37:52 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+07/10/2024 23:38:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_a_cobblestone_street/
+07/10/2024 23:38:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_a_cobblestone_street/
+07/10/2024 23:38:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_a_cobblestone_street/
+07/10/2024 23:38:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_a_cobblestone_street/
+07/10/2024 23:38:45 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+07/10/2024 23:38:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_pink_fabric/
+07/10/2024 23:39:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_pink_fabric/
+07/10/2024 23:39:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_pink_fabric/
+07/10/2024 23:39:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_pink_fabric/
+07/10/2024 23:39:38 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+07/10/2024 23:39:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_wooden_floor/
+07/10/2024 23:40:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_wooden_floor/
+07/10/2024 23:40:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_wooden_floor/
+07/10/2024 23:40:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_wooden_floor/
+07/10/2024 23:40:31 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+07/10/2024 23:40:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_city_in_the_background/
+07/10/2024 23:40:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_city_in_the_background/
+07/10/2024 23:41:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_city_in_the_background/
+07/10/2024 23:41:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_city_in_the_background/
+07/10/2024 23:41:25 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+07/10/2024 23:41:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_mountain_in_the_background/
+07/10/2024 23:41:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_mountain_in_the_background/
+07/10/2024 23:42:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_mountain_in_the_background/
+07/10/2024 23:42:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_mountain_in_the_background/
+07/10/2024 23:42:18 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+07/10/2024 23:42:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_blue_house_in_the_background/
+07/10/2024 23:42:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_blue_house_in_the_background/
+07/10/2024 23:42:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_blue_house_in_the_background/
+07/10/2024 23:43:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_blue_house_in_the_background/
+07/10/2024 23:43:11 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+07/10/2024 23:43:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 23:43:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 23:43:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 23:44:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+07/10/2024 23:44:04 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+07/10/2024 23:44:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_wheat_field_in_the_background/
+07/10/2024 23:44:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_wheat_field_in_the_background/
+07/10/2024 23:44:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_wheat_field_in_the_background/
+07/10/2024 23:44:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_wheat_field_in_the_background/
+07/10/2024 23:44:57 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+07/10/2024 23:45:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 23:45:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 23:45:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 23:45:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/10/2024 23:45:50 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+07/10/2024 23:46:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:46:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:46:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:46:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+07/10/2024 23:46:44 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+07/10/2024 23:46:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/floating_on_top_of_water/
+07/10/2024 23:47:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/floating_on_top_of_water/
+07/10/2024 23:47:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/floating_on_top_of_water/
+07/10/2024 23:47:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/floating_on_top_of_water/
+07/10/2024 23:47:37 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+07/10/2024 23:47:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:48:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:48:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:48:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/floating_in_an_ocean_of_milk/
+07/10/2024 23:48:30 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+07/10/2024 23:48:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:48:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:49:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:49:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/10/2024 23:49:23 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+07/10/2024 23:49:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_mirror/
+07/10/2024 23:49:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_mirror/
+07/10/2024 23:50:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_mirror/
+07/10/2024 23:50:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_mirror/
+07/10/2024 23:50:17 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+07/10/2024 23:50:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:50:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:50:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:51:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/10/2024 23:51:10 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+07/10/2024 23:51:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_dirt_road/
+07/10/2024 23:51:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_dirt_road/
+07/10/2024 23:51:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_dirt_road/
+07/10/2024 23:52:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_dirt_road/
+07/10/2024 23:52:03 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+07/10/2024 23:52:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_white_rug/
+07/10/2024 23:52:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_white_rug/
+07/10/2024 23:52:42 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_white_rug/
+07/10/2024 23:52:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/on_top_of_a_white_rug/
+07/10/2024 23:52:56 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+07/10/2024 23:53:09 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/red/
+07/10/2024 23:53:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/red/
+07/10/2024 23:53:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/red/
+07/10/2024 23:53:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/red/
+07/10/2024 23:53:49 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+07/10/2024 23:54:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/purple/
+07/10/2024 23:54:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/purple/
+07/10/2024 23:54:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/purple/
+07/10/2024 23:54:42 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/purple/
+07/10/2024 23:54:42 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+07/10/2024 23:54:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/shiny/
+07/10/2024 23:55:09 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/shiny/
+07/10/2024 23:55:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/shiny/
+07/10/2024 23:55:35 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/shiny/
+07/10/2024 23:55:35 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+07/10/2024 23:55:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/wet/
+07/10/2024 23:56:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/wet/
+07/10/2024 23:56:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/wet/
+07/10/2024 23:56:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/wet/
+07/10/2024 23:56:28 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+07/10/2024 23:56:42 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/cube_shaped/
+07/10/2024 23:56:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/cube_shaped/
+07/10/2024 23:57:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/cube_shaped/
+07/10/2024 23:57:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-100/images/cube_shaped/
+07/10/2024 23:57:24 - INFO - root - {'loss': 0.1682613492012024, 'lr': 0.0001}
+07/10/2024 23:57:26 - INFO - root - {'loss': 0.15869399905204773, 'lr': 0.0001}
+07/10/2024 23:57:28 - INFO - root - {'loss': 0.17345213890075684, 'lr': 0.0001}
+07/10/2024 23:57:30 - INFO - root - {'loss': 0.27765387296676636, 'lr': 0.0001}
+07/10/2024 23:57:32 - INFO - root - {'loss': 0.24572448432445526, 'lr': 0.0001}
+07/10/2024 23:57:34 - INFO - root - {'loss': 0.13831192255020142, 'lr': 0.0001}
+07/10/2024 23:57:37 - INFO - root - {'loss': 0.6471002101898193, 'lr': 0.0001}
+07/10/2024 23:57:39 - INFO - root - {'loss': 0.1761035919189453, 'lr': 0.0001}
+07/10/2024 23:57:41 - INFO - root - {'loss': 0.2949922978878021, 'lr': 0.0001}
+07/10/2024 23:57:43 - INFO - root - {'loss': 0.17132806777954102, 'lr': 0.0001}
+07/10/2024 23:57:45 - INFO - root - {'loss': 0.15507479012012482, 'lr': 0.0001}
+07/10/2024 23:57:47 - INFO - root - {'loss': 0.1524530053138733, 'lr': 0.0001}
+07/10/2024 23:57:49 - INFO - root - {'loss': 0.1218191459774971, 'lr': 0.0001}
+07/10/2024 23:57:51 - INFO - root - {'loss': 0.1791045367717743, 'lr': 0.0001}
+07/10/2024 23:57:54 - INFO - root - {'loss': 0.1379706710577011, 'lr': 0.0001}
+07/10/2024 23:57:56 - INFO - root - {'loss': 0.13427028059959412, 'lr': 0.0001}
+07/10/2024 23:57:58 - INFO - root - {'loss': 0.4577338695526123, 'lr': 0.0001}
+07/10/2024 23:58:00 - INFO - root - {'loss': 0.2216193974018097, 'lr': 0.0001}
+07/10/2024 23:58:02 - INFO - root - {'loss': 0.155827596783638, 'lr': 0.0001}
+07/10/2024 23:58:04 - INFO - root - {'loss': 0.21701101958751678, 'lr': 0.0001}
+07/10/2024 23:58:04 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+07/10/2024 23:58:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/in_the_jungle/
+07/10/2024 23:58:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/in_the_jungle/
+07/10/2024 23:58:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/in_the_jungle/
+07/10/2024 23:58:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/in_the_jungle/
+07/10/2024 23:58:57 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+07/10/2024 23:59:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/in_the_snow/
+07/10/2024 23:59:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/in_the_snow/
+07/10/2024 23:59:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/in_the_snow/
+07/10/2024 23:59:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/in_the_snow/
+07/10/2024 23:59:50 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+07/11/2024 00:00:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_the_beach/
+07/11/2024 00:00:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_the_beach/
+07/11/2024 00:00:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_the_beach/
+07/11/2024 00:00:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_the_beach/
+07/11/2024 00:00:43 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+07/11/2024 00:00:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_a_cobblestone_street/
+07/11/2024 00:01:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_a_cobblestone_street/
+07/11/2024 00:01:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_a_cobblestone_street/
+07/11/2024 00:01:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_a_cobblestone_street/
+07/11/2024 00:01:36 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+07/11/2024 00:01:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_pink_fabric/
+07/11/2024 00:02:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_pink_fabric/
+07/11/2024 00:02:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_pink_fabric/
+07/11/2024 00:02:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_pink_fabric/
+07/11/2024 00:02:30 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+07/11/2024 00:02:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_wooden_floor/
+07/11/2024 00:02:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_wooden_floor/
+07/11/2024 00:03:09 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_wooden_floor/
+07/11/2024 00:03:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_wooden_floor/
+07/11/2024 00:03:23 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+07/11/2024 00:03:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_city_in_the_background/
+07/11/2024 00:03:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_city_in_the_background/
+07/11/2024 00:04:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_city_in_the_background/
+07/11/2024 00:04:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_city_in_the_background/
+07/11/2024 00:04:16 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+07/11/2024 00:04:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_mountain_in_the_background/
+07/11/2024 00:04:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_mountain_in_the_background/
+07/11/2024 00:04:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_mountain_in_the_background/
+07/11/2024 00:05:09 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_mountain_in_the_background/
+07/11/2024 00:05:09 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+07/11/2024 00:05:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_blue_house_in_the_background/
+07/11/2024 00:05:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_blue_house_in_the_background/
+07/11/2024 00:05:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_blue_house_in_the_background/
+07/11/2024 00:06:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_blue_house_in_the_background/
+07/11/2024 00:06:02 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+07/11/2024 00:06:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:06:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:06:42 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:06:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:06:56 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+07/11/2024 00:07:09 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:07:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:07:35 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:07:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:07:49 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+07/11/2024 00:08:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:08:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:08:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:08:42 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:08:42 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+07/11/2024 00:08:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:09:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:09:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:09:35 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:09:35 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+07/11/2024 00:09:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/floating_on_top_of_water/
+07/11/2024 00:10:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/floating_on_top_of_water/
+07/11/2024 00:10:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/floating_on_top_of_water/
+07/11/2024 00:10:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/floating_on_top_of_water/
+07/11/2024 00:10:28 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+07/11/2024 00:10:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:10:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:11:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:11:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:11:21 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+07/11/2024 00:11:35 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:11:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:12:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:12:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:12:15 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+07/11/2024 00:12:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_mirror/
+07/11/2024 00:12:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_mirror/
+07/11/2024 00:12:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_mirror/
+07/11/2024 00:13:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_mirror/
+07/11/2024 00:13:08 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+07/11/2024 00:13:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:13:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:13:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:14:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:14:01 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+07/11/2024 00:14:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_dirt_road/
+07/11/2024 00:14:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_dirt_road/
+07/11/2024 00:14:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_dirt_road/
+07/11/2024 00:14:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_dirt_road/
+07/11/2024 00:14:54 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+07/11/2024 00:15:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_white_rug/
+07/11/2024 00:15:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_white_rug/
+07/11/2024 00:15:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_white_rug/
+07/11/2024 00:15:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/on_top_of_a_white_rug/
+07/11/2024 00:15:47 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+07/11/2024 00:16:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/red/
+07/11/2024 00:16:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/red/
+07/11/2024 00:16:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/red/
+07/11/2024 00:16:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/red/
+07/11/2024 00:16:40 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+07/11/2024 00:16:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/purple/
+07/11/2024 00:17:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/purple/
+07/11/2024 00:17:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/purple/
+07/11/2024 00:17:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/purple/
+07/11/2024 00:17:34 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+07/11/2024 00:17:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/shiny/
+07/11/2024 00:18:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/shiny/
+07/11/2024 00:18:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/shiny/
+07/11/2024 00:18:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/shiny/
+07/11/2024 00:18:27 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+07/11/2024 00:18:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/wet/
+07/11/2024 00:18:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/wet/
+07/11/2024 00:19:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/wet/
+07/11/2024 00:19:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/wet/
+07/11/2024 00:19:20 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+07/11/2024 00:19:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/cube_shaped/
+07/11/2024 00:19:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/cube_shaped/
+07/11/2024 00:19:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/cube_shaped/
+07/11/2024 00:20:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-120/images/cube_shaped/
+07/11/2024 00:20:15 - INFO - root - {'loss': 0.19070295989513397, 'lr': 0.0001}
+07/11/2024 00:20:17 - INFO - root - {'loss': 0.11156647652387619, 'lr': 0.0001}
+07/11/2024 00:20:19 - INFO - root - {'loss': 0.10876162350177765, 'lr': 0.0001}
+07/11/2024 00:20:21 - INFO - root - {'loss': 0.16007468104362488, 'lr': 0.0001}
+07/11/2024 00:20:23 - INFO - root - {'loss': 0.13443228602409363, 'lr': 0.0001}
+07/11/2024 00:20:25 - INFO - root - {'loss': 0.12382981181144714, 'lr': 0.0001}
+07/11/2024 00:20:28 - INFO - root - {'loss': 0.08434747159481049, 'lr': 0.0001}
+07/11/2024 00:20:30 - INFO - root - {'loss': 0.13882917165756226, 'lr': 0.0001}
+07/11/2024 00:20:32 - INFO - root - {'loss': 0.14493905007839203, 'lr': 0.0001}
+07/11/2024 00:20:34 - INFO - root - {'loss': 0.12615415453910828, 'lr': 0.0001}
+07/11/2024 00:20:36 - INFO - root - {'loss': 0.2507302165031433, 'lr': 0.0001}
+07/11/2024 00:20:38 - INFO - root - {'loss': 0.12896579504013062, 'lr': 0.0001}
+07/11/2024 00:20:40 - INFO - root - {'loss': 0.09285587072372437, 'lr': 0.0001}
+07/11/2024 00:20:42 - INFO - root - {'loss': 0.21712633967399597, 'lr': 0.0001}
+07/11/2024 00:20:45 - INFO - root - {'loss': 0.13762199878692627, 'lr': 0.0001}
+07/11/2024 00:20:47 - INFO - root - {'loss': 0.20192155241966248, 'lr': 0.0001}
+07/11/2024 00:20:49 - INFO - root - {'loss': 0.14696398377418518, 'lr': 0.0001}
+07/11/2024 00:20:51 - INFO - root - {'loss': 0.13802039623260498, 'lr': 0.0001}
+07/11/2024 00:20:53 - INFO - root - {'loss': 0.1073673814535141, 'lr': 0.0001}
+07/11/2024 00:20:55 - INFO - root - {'loss': 0.1613134741783142, 'lr': 0.0001}
+07/11/2024 00:20:55 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+07/11/2024 00:21:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/in_the_jungle/
+07/11/2024 00:21:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/in_the_jungle/
+07/11/2024 00:21:35 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/in_the_jungle/
+07/11/2024 00:21:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/in_the_jungle/
+07/11/2024 00:21:48 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+07/11/2024 00:22:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/in_the_snow/
+07/11/2024 00:22:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/in_the_snow/
+07/11/2024 00:22:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/in_the_snow/
+07/11/2024 00:22:42 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/in_the_snow/
+07/11/2024 00:22:42 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+07/11/2024 00:22:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_the_beach/
+07/11/2024 00:23:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_the_beach/
+07/11/2024 00:23:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_the_beach/
+07/11/2024 00:23:35 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_the_beach/
+07/11/2024 00:23:35 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+07/11/2024 00:23:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_a_cobblestone_street/
+07/11/2024 00:24:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_a_cobblestone_street/
+07/11/2024 00:24:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_a_cobblestone_street/
+07/11/2024 00:24:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_a_cobblestone_street/
+07/11/2024 00:24:28 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+07/11/2024 00:24:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_pink_fabric/
+07/11/2024 00:24:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_pink_fabric/
+07/11/2024 00:25:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_pink_fabric/
+07/11/2024 00:25:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_pink_fabric/
+07/11/2024 00:25:21 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+07/11/2024 00:25:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_wooden_floor/
+07/11/2024 00:25:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_wooden_floor/
+07/11/2024 00:26:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_wooden_floor/
+07/11/2024 00:26:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_wooden_floor/
+07/11/2024 00:26:14 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+07/11/2024 00:26:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_city_in_the_background/
+07/11/2024 00:26:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_city_in_the_background/
+07/11/2024 00:26:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_city_in_the_background/
+07/11/2024 00:27:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_city_in_the_background/
+07/11/2024 00:27:07 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+07/11/2024 00:27:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_mountain_in_the_background/
+07/11/2024 00:27:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_mountain_in_the_background/
+07/11/2024 00:27:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_mountain_in_the_background/
+07/11/2024 00:28:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_mountain_in_the_background/
+07/11/2024 00:28:00 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+07/11/2024 00:28:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_blue_house_in_the_background/
+07/11/2024 00:28:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_blue_house_in_the_background/
+07/11/2024 00:28:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_blue_house_in_the_background/
+07/11/2024 00:28:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_blue_house_in_the_background/
+07/11/2024 00:28:54 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+07/11/2024 00:29:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:29:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:29:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:29:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:29:47 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+07/11/2024 00:30:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:30:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:30:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:30:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:30:40 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+07/11/2024 00:30:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:31:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:31:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:31:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:31:33 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+07/11/2024 00:31:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:32:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:32:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:32:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:32:26 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+07/11/2024 00:32:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/floating_on_top_of_water/
+07/11/2024 00:32:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/floating_on_top_of_water/
+07/11/2024 00:33:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/floating_on_top_of_water/
+07/11/2024 00:33:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/floating_on_top_of_water/
+07/11/2024 00:33:20 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+07/11/2024 00:33:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:33:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:34:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:34:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:34:13 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+07/11/2024 00:34:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:34:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:34:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:35:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:35:06 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+07/11/2024 00:35:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_mirror/
+07/11/2024 00:35:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_mirror/
+07/11/2024 00:35:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_mirror/
+07/11/2024 00:35:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_mirror/
+07/11/2024 00:35:59 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+07/11/2024 00:36:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:36:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:36:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:36:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:36:53 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+07/11/2024 00:37:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_dirt_road/
+07/11/2024 00:37:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_dirt_road/
+07/11/2024 00:37:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_dirt_road/
+07/11/2024 00:37:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_dirt_road/
+07/11/2024 00:37:46 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+07/11/2024 00:37:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_white_rug/
+07/11/2024 00:38:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_white_rug/
+07/11/2024 00:38:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_white_rug/
+07/11/2024 00:38:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/on_top_of_a_white_rug/
+07/11/2024 00:38:39 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+07/11/2024 00:38:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/red/
+07/11/2024 00:39:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/red/
+07/11/2024 00:39:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/red/
+07/11/2024 00:39:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/red/
+07/11/2024 00:39:32 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+07/11/2024 00:39:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/purple/
+07/11/2024 00:39:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/purple/
+07/11/2024 00:40:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/purple/
+07/11/2024 00:40:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/purple/
+07/11/2024 00:40:25 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+07/11/2024 00:40:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/shiny/
+07/11/2024 00:40:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/shiny/
+07/11/2024 00:41:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/shiny/
+07/11/2024 00:41:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/shiny/
+07/11/2024 00:41:19 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+07/11/2024 00:41:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/wet/
+07/11/2024 00:41:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/wet/
+07/11/2024 00:41:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/wet/
+07/11/2024 00:42:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/wet/
+07/11/2024 00:42:12 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+07/11/2024 00:42:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/cube_shaped/
+07/11/2024 00:42:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/cube_shaped/
+07/11/2024 00:42:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/cube_shaped/
+07/11/2024 00:43:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-140/images/cube_shaped/
+07/11/2024 00:43:08 - INFO - root - {'loss': 0.11938276141881943, 'lr': 0.0001}
+07/11/2024 00:43:10 - INFO - root - {'loss': 0.13211064040660858, 'lr': 0.0001}
+07/11/2024 00:43:12 - INFO - root - {'loss': 0.15390601754188538, 'lr': 0.0001}
+07/11/2024 00:43:14 - INFO - root - {'loss': 0.22973522543907166, 'lr': 0.0001}
+07/11/2024 00:43:16 - INFO - root - {'loss': 0.15279319882392883, 'lr': 0.0001}
+07/11/2024 00:43:18 - INFO - root - {'loss': 0.19105148315429688, 'lr': 0.0001}
+07/11/2024 00:43:21 - INFO - root - {'loss': 0.17555665969848633, 'lr': 0.0001}
+07/11/2024 00:43:23 - INFO - root - {'loss': 0.1321336328983307, 'lr': 0.0001}
+07/11/2024 00:43:25 - INFO - root - {'loss': 0.2544548213481903, 'lr': 0.0001}
+07/11/2024 00:43:27 - INFO - root - {'loss': 0.1894378662109375, 'lr': 0.0001}
+07/11/2024 00:43:29 - INFO - root - {'loss': 0.12093902379274368, 'lr': 0.0001}
+07/11/2024 00:43:31 - INFO - root - {'loss': 0.18432612717151642, 'lr': 0.0001}
+07/11/2024 00:43:33 - INFO - root - {'loss': 0.2143172025680542, 'lr': 0.0001}
+07/11/2024 00:43:35 - INFO - root - {'loss': 0.11530227959156036, 'lr': 0.0001}
+07/11/2024 00:43:37 - INFO - root - {'loss': 0.1384722739458084, 'lr': 0.0001}
+07/11/2024 00:43:39 - INFO - root - {'loss': 0.19948814809322357, 'lr': 0.0001}
+07/11/2024 00:43:42 - INFO - root - {'loss': 0.2495056837797165, 'lr': 0.0001}
+07/11/2024 00:43:44 - INFO - root - {'loss': 0.1657389998435974, 'lr': 0.0001}
+07/11/2024 00:43:46 - INFO - root - {'loss': 0.12469696998596191, 'lr': 0.0001}
+07/11/2024 00:43:48 - INFO - root - {'loss': 0.23179806768894196, 'lr': 0.0001}
+07/11/2024 00:43:48 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+07/11/2024 00:44:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/in_the_jungle/
+07/11/2024 00:44:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/in_the_jungle/
+07/11/2024 00:44:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/in_the_jungle/
+07/11/2024 00:44:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/in_the_jungle/
+07/11/2024 00:44:41 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+07/11/2024 00:44:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/in_the_snow/
+07/11/2024 00:45:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/in_the_snow/
+07/11/2024 00:45:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/in_the_snow/
+07/11/2024 00:45:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/in_the_snow/
+07/11/2024 00:45:34 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+07/11/2024 00:45:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_the_beach/
+07/11/2024 00:46:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_the_beach/
+07/11/2024 00:46:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_the_beach/
+07/11/2024 00:46:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_the_beach/
+07/11/2024 00:46:27 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+07/11/2024 00:46:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_a_cobblestone_street/
+07/11/2024 00:46:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_a_cobblestone_street/
+07/11/2024 00:47:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_a_cobblestone_street/
+07/11/2024 00:47:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_a_cobblestone_street/
+07/11/2024 00:47:21 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+07/11/2024 00:47:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_pink_fabric/
+07/11/2024 00:47:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_pink_fabric/
+07/11/2024 00:48:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_pink_fabric/
+07/11/2024 00:48:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_pink_fabric/
+07/11/2024 00:48:14 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+07/11/2024 00:48:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_wooden_floor/
+07/11/2024 00:48:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_wooden_floor/
+07/11/2024 00:48:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_wooden_floor/
+07/11/2024 00:49:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_wooden_floor/
+07/11/2024 00:49:07 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+07/11/2024 00:49:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_city_in_the_background/
+07/11/2024 00:49:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_city_in_the_background/
+07/11/2024 00:49:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_city_in_the_background/
+07/11/2024 00:50:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_city_in_the_background/
+07/11/2024 00:50:00 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+07/11/2024 00:50:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_mountain_in_the_background/
+07/11/2024 00:50:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_mountain_in_the_background/
+07/11/2024 00:50:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_mountain_in_the_background/
+07/11/2024 00:50:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_mountain_in_the_background/
+07/11/2024 00:50:54 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+07/11/2024 00:51:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_blue_house_in_the_background/
+07/11/2024 00:51:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_blue_house_in_the_background/
+07/11/2024 00:51:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_blue_house_in_the_background/
+07/11/2024 00:51:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_blue_house_in_the_background/
+07/11/2024 00:51:47 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+07/11/2024 00:52:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:52:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:52:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:52:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_purple_rug_in_a_forest/
+07/11/2024 00:52:40 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+07/11/2024 00:52:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:53:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:53:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:53:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_wheat_field_in_the_background/
+07/11/2024 00:53:33 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+07/11/2024 00:53:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:53:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:54:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:54:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_a_tree_and_autumn_leaves_in_the_background/
+07/11/2024 00:54:26 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+07/11/2024 00:54:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:54:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:55:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:55:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/with_the_Eiffel_Tower_in_the_background/
+07/11/2024 00:55:19 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+07/11/2024 00:55:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/floating_on_top_of_water/
+07/11/2024 00:55:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/floating_on_top_of_water/
+07/11/2024 00:55:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/floating_on_top_of_water/
+07/11/2024 00:56:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/floating_on_top_of_water/
+07/11/2024 00:56:12 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+07/11/2024 00:56:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:56:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:56:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:57:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/floating_in_an_ocean_of_milk/
+07/11/2024 00:57:05 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+07/11/2024 00:57:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:57:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:57:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:57:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_green_grass_with_sunflowers_around_it/
+07/11/2024 00:57:58 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+07/11/2024 00:58:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_mirror/
+07/11/2024 00:58:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_mirror/
+07/11/2024 00:58:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_mirror/
+07/11/2024 00:58:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_mirror/
+07/11/2024 00:58:51 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+07/11/2024 00:59:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:59:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:59:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:59:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_the_sidewalk_in_a_crowded_street/
+07/11/2024 00:59:44 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+07/11/2024 00:59:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_dirt_road/
+07/11/2024 01:00:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_dirt_road/
+07/11/2024 01:00:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_dirt_road/
+07/11/2024 01:00:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_dirt_road/
+07/11/2024 01:00:37 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+07/11/2024 01:00:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_white_rug/
+07/11/2024 01:01:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_white_rug/
+07/11/2024 01:01:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_white_rug/
+07/11/2024 01:01:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/on_top_of_a_white_rug/
+07/11/2024 01:01:30 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+07/11/2024 01:01:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/red/
+07/11/2024 01:01:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/red/
+07/11/2024 01:02:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/red/
+07/11/2024 01:02:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/red/
+07/11/2024 01:02:24 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+07/11/2024 01:02:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/purple/
+07/11/2024 01:02:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/purple/
+07/11/2024 01:03:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/purple/
+07/11/2024 01:03:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/purple/
+07/11/2024 01:03:17 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+07/11/2024 01:03:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/shiny/
+07/11/2024 01:03:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/shiny/
+07/11/2024 01:03:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/shiny/
+07/11/2024 01:04:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/shiny/
+07/11/2024 01:04:10 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+07/11/2024 01:04:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/wet/
+07/11/2024 01:04:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/wet/
+07/11/2024 01:04:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/wet/
+07/11/2024 01:05:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/wet/
+07/11/2024 01:05:03 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+07/11/2024 01:05:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/cube_shaped/
+07/11/2024 01:05:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/cube_shaped/
+07/11/2024 01:05:42 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/cube_shaped/
+07/11/2024 01:05:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-160/images/cube_shaped/

@@ -1,0 +1,37 @@
+11/11/2024 03:37:33 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+11/11/2024 03:37:35 - INFO - root - freeze vision encoder
+11/11/2024 03:37:45 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+11/11/2024 03:37:45 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+11/11/2024 03:37:47 - INFO - root - Loading pretrained projection lyer weights.
+11/11/2024 03:37:47 - INFO - root - Loading pretrained text encoder weights.
+11/11/2024 03:37:48 - INFO - root - Loading pretrained vae weights.
+11/11/2024 03:37:49 - INFO - root - Loading pretrained unet weights.
+11/11/2024 03:37:56 - INFO - root - Using xformers.
+11/11/2024 03:37:56 - INFO - root - Building datasets...
+11/11/2024 03:38:06 - INFO - root - freeze vision encoder
+11/11/2024 03:38:34 - INFO - root - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xl.pth
+11/11/2024 03:38:35 - INFO - __main__ - 
+***** Running training *****
+11/11/2024 03:38:35 - INFO - __main__ -   Num examples = 5
+11/11/2024 03:38:35 - INFO - __main__ -   Num batches each epoch = 3
+11/11/2024 03:38:35 - INFO - __main__ -   Num Epochs = 167
+11/11/2024 03:38:35 - INFO - __main__ -   Instantaneous batch size per device = 2
+11/11/2024 03:38:35 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 2
+11/11/2024 03:38:35 - INFO - __main__ -   Gradient Accumulation steps = 1
+11/11/2024 03:38:35 - INFO - __main__ -   Total optimization steps = 500
+11/11/2024 03:38:42 - INFO - root - {'loss': 0.9430093765258789, 'lr': 0.0001}
+11/11/2024 03:38:43 - INFO - root - {'loss': 0.6922093033790588, 'lr': 0.0001}
+11/11/2024 03:38:44 - INFO - root - {'loss': 1.0374550819396973, 'lr': 0.0001}
+11/11/2024 03:38:47 - INFO - root - {'loss': 0.6436105966567993, 'lr': 0.0001}
+11/11/2024 03:38:48 - INFO - root - {'loss': 0.7258245348930359, 'lr': 0.0001}
+11/11/2024 03:38:49 - INFO - root - {'loss': 1.1813267469406128, 'lr': 0.0001}
+11/11/2024 03:38:52 - INFO - root - {'loss': 0.6411161422729492, 'lr': 0.0001}
+11/11/2024 03:38:53 - INFO - root - {'loss': 0.7484007477760315, 'lr': 0.0001}
+11/11/2024 03:38:54 - INFO - root - {'loss': 0.9749976396560669, 'lr': 0.0001}

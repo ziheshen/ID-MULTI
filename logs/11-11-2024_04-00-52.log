@@ -1,0 +1,28 @@
+11/11/2024 04:00:52 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+11/11/2024 04:00:55 - INFO - root - freeze vision encoder
+11/11/2024 04:01:05 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+11/11/2024 04:01:05 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+11/11/2024 04:01:07 - INFO - root - Loading pretrained projection lyer weights.
+11/11/2024 04:01:07 - INFO - root - Loading pretrained text encoder weights.
+11/11/2024 04:01:07 - INFO - root - Loading pretrained vae weights.
+11/11/2024 04:01:08 - INFO - root - Loading pretrained unet weights.
+11/11/2024 04:01:15 - INFO - root - Using xformers.
+11/11/2024 04:01:15 - INFO - root - Building datasets...
+11/11/2024 04:01:25 - INFO - root - freeze vision encoder
+11/11/2024 04:01:52 - INFO - root - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xl.pth
+11/11/2024 04:01:53 - INFO - __main__ - 
+***** Running training *****
+11/11/2024 04:01:53 - INFO - __main__ -   Num examples = 5
+11/11/2024 04:01:53 - INFO - __main__ -   Num batches each epoch = 3
+11/11/2024 04:01:53 - INFO - __main__ -   Num Epochs = 167
+11/11/2024 04:01:53 - INFO - __main__ -   Instantaneous batch size per device = 2
+11/11/2024 04:01:53 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 2
+11/11/2024 04:01:53 - INFO - __main__ -   Gradient Accumulation steps = 1
+11/11/2024 04:01:53 - INFO - __main__ -   Total optimization steps = 500

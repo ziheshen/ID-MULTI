@@ -1,0 +1,38 @@
+11/11/2024 03:50:57 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+11/11/2024 03:51:02 - INFO - root - freeze vision encoder
+11/11/2024 03:51:12 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+11/11/2024 03:51:12 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+11/11/2024 03:51:13 - INFO - root - Loading pretrained projection lyer weights.
+11/11/2024 03:51:14 - INFO - root - Loading pretrained text encoder weights.
+11/11/2024 03:51:14 - INFO - root - Loading pretrained vae weights.
+11/11/2024 03:51:15 - INFO - root - Loading pretrained unet weights.
+11/11/2024 03:51:22 - INFO - root - Using xformers.
+11/11/2024 03:51:22 - INFO - root - Building datasets...
+11/11/2024 03:51:32 - INFO - root - freeze vision encoder
+11/11/2024 03:51:57 - INFO - root - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xl.pth
+11/11/2024 03:51:58 - INFO - __main__ - 
+***** Running training *****
+11/11/2024 03:51:58 - INFO - __main__ -   Num examples = 5
+11/11/2024 03:51:58 - INFO - __main__ -   Num batches each epoch = 3
+11/11/2024 03:51:58 - INFO - __main__ -   Num Epochs = 167
+11/11/2024 03:51:58 - INFO - __main__ -   Instantaneous batch size per device = 2
+11/11/2024 03:51:58 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 2
+11/11/2024 03:51:58 - INFO - __main__ -   Gradient Accumulation steps = 1
+11/11/2024 03:51:58 - INFO - __main__ -   Total optimization steps = 500
+11/11/2024 03:52:08 - INFO - __main__ - {'loss': 1.0374529361724854, 'lr': 0.0001}
+11/11/2024 03:52:13 - INFO - __main__ - {'loss': 1.1813267469406128, 'lr': 0.0001}
+11/11/2024 03:52:18 - INFO - __main__ - {'loss': 0.9749988317489624, 'lr': 0.0001}
+11/11/2024 03:52:23 - INFO - __main__ - {'loss': 0.6306326389312744, 'lr': 0.0001}
+11/11/2024 03:52:28 - INFO - __main__ - {'loss': 0.6338784694671631, 'lr': 0.0001}
+11/11/2024 03:52:33 - INFO - __main__ - {'loss': 0.6975278854370117, 'lr': 0.0001}
+11/11/2024 03:52:38 - INFO - __main__ - {'loss': 0.6307549476623535, 'lr': 0.0001}
+11/11/2024 03:52:44 - INFO - __main__ - {'loss': 0.743543803691864, 'lr': 0.0001}
+11/11/2024 03:52:49 - INFO - __main__ - {'loss': 0.6458079814910889, 'lr': 0.0001}
+11/11/2024 03:52:54 - INFO - __main__ - {'loss': 0.8617838621139526, 'lr': 0.0001}

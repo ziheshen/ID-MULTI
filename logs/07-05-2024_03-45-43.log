@@ -1,0 +1,121 @@
+07/05/2024 03:45:43 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+07/05/2024 03:45:43 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+07/05/2024 03:45:45 - INFO - root - freeze vision encoder
+07/05/2024 03:45:48 - INFO - root - Loaded ViT-H-14 model config.
+07/05/2024 03:45:53 - INFO - root - Loading pretrained ViT-H-14 weights (laion2b_s32b_b79k).
+07/05/2024 03:45:58 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/diffusers/configuration_utils.py:215: FutureWarning: It is deprecated to pass a pretrained model name or path to `from_config`.If you were trying to load a scheduler, please use <class 'diffusers.schedulers.scheduling_ddpm.DDPMScheduler'>.from_pretrained(...) instead. Otherwise, please make sure to pass a configuration dictionary instead. This functionality will be removed in v1.0.0.
+  deprecate("config-passed-as-path", "1.0.0", deprecation_message, standard_warn=False)
+
+07/05/2024 03:45:58 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+07/05/2024 03:45:58 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+07/05/2024 03:46:00 - INFO - root - Loading pretrained projection lyer weights.
+07/05/2024 03:46:00 - INFO - root - Loading pretrained text encoder weights.
+07/05/2024 03:46:01 - INFO - root - Loading pretrained vae weights.
+07/05/2024 03:46:01 - INFO - root - Loading pretrained unet weights.
+07/05/2024 03:46:07 - INFO - root - Using xformers.
+07/05/2024 03:46:07 - INFO - root - Building datasets...
+07/05/2024 03:46:08 - INFO - __main__ - 
+***** Running training *****
+07/05/2024 03:46:08 - INFO - __main__ -   Num examples = 4
+07/05/2024 03:46:08 - INFO - __main__ -   Num batches each epoch = 2
+07/05/2024 03:46:08 - INFO - __main__ -   Num Epochs = 30
+07/05/2024 03:46:08 - INFO - __main__ -   Instantaneous batch size per device = 2
+07/05/2024 03:46:08 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 2
+07/05/2024 03:46:08 - INFO - __main__ -   Gradient Accumulation steps = 1
+07/05/2024 03:46:08 - INFO - __main__ -   Total optimization steps = 60
+07/05/2024 03:46:09 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/torch/backends/cuda/__init__.py:342: FutureWarning: torch.backends.cuda.sdp_kernel() is deprecated. In the future, this context manager will be removed. Please see, torch.nn.attention.sdpa_kernel() for the new context manager, with updated signature.
+  warnings.warn(
+
+07/05/2024 03:46:50 - INFO - accelerate.accelerator - Saving current state to /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20
+07/05/2024 03:46:50 - WARNING - accelerate.utils.other - Removed shared tensor {'blip.Qformer.cls.predictions.decoder.bias', 'blip.Qformer.cls.predictions.decoder.weight'} while saving. This should be OK, but check by verifying that you don't receive any warning while reloading
+07/05/2024 03:47:09 - INFO - accelerate.checkpointing - Model weights saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/model.safetensors
+07/05/2024 03:47:17 - INFO - accelerate.checkpointing - Optimizer state saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/optimizer.bin
+07/05/2024 03:47:17 - INFO - accelerate.checkpointing - Scheduler state saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/scheduler.bin
+07/05/2024 03:47:17 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/sampler.bin
+07/05/2024 03:47:17 - INFO - accelerate.checkpointing - Random states saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/random_states_0.pkl
+07/05/2024 03:47:17 - INFO - __main__ - Saved state to /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20
+07/05/2024 03:47:17 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+07/05/2024 03:47:17 - WARNING - py.warnings - /shenzihe/multi_BlipDisenBooth/multi_BD.py:646: FutureWarning: Accessing config attribute `in_channels` directly via 'UNet2DConditionModel' object attribute is deprecated. Please access 'in_channels' over 'UNet2DConditionModel's config object instead, e.g. 'unet.config.in_channels'.
+  (1, self.unet.in_channels, height // 8, width // 8),
+
+07/05/2024 03:47:17 - WARNING - py.warnings - /shenzihe/multi_BlipDisenBooth/multi_BD.py:652: FutureWarning: Accessing config attribute `in_channels` directly via 'UNet2DConditionModel' object attribute is deprecated. Please access 'in_channels' over 'UNet2DConditionModel's config object instead, e.g. 'unet.config.in_channels'.
+  self.unet.in_channels,
+
+07/05/2024 03:47:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:47:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:47:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:48:09 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:48:09 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+07/05/2024 03:48:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:48:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:48:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:49:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:49:02 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+07/05/2024 03:49:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:49:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:49:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:49:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:49:55 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+07/05/2024 03:50:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:50:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:50:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:50:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:50:47 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+07/05/2024 03:51:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:51:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:51:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:51:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:51:40 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+07/05/2024 03:51:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:52:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:52:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:52:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:52:32 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+07/05/2024 03:52:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:53:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:53:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:53:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:53:26 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+07/05/2024 03:53:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:53:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:54:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:54:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:54:19 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+07/05/2024 03:54:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:54:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:54:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:55:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:55:11 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+07/05/2024 03:55:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:55:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:55:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:56:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:56:04 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+07/05/2024 03:56:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:56:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:56:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:56:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:56:57 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+07/05/2024 03:57:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/
+07/05/2024 03:57:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.01_1_0.1/checkpoint-20/images/prompt.replace(' ', '_')/

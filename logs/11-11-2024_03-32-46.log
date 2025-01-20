@@ -1,0 +1,44 @@
+11/11/2024 03:32:46 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+11/11/2024 03:32:48 - INFO - root - freeze vision encoder
+11/11/2024 03:32:59 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+11/11/2024 03:32:59 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+11/11/2024 03:33:01 - INFO - root - Loading pretrained projection lyer weights.
+11/11/2024 03:33:01 - INFO - root - Loading pretrained text encoder weights.
+11/11/2024 03:33:02 - INFO - root - Loading pretrained vae weights.
+11/11/2024 03:33:02 - INFO - root - Loading pretrained unet weights.
+11/11/2024 03:33:11 - INFO - root - Using xformers.
+11/11/2024 03:33:11 - INFO - root - Building datasets...
+11/11/2024 03:33:21 - INFO - root - freeze vision encoder
+11/11/2024 03:33:53 - INFO - root - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xl.pth
+11/11/2024 03:33:54 - INFO - __main__ - 
+***** Running training *****
+11/11/2024 03:33:54 - INFO - __main__ -   Num examples = 5
+11/11/2024 03:33:54 - INFO - __main__ -   Num batches each epoch = 3
+11/11/2024 03:33:54 - INFO - __main__ -   Num Epochs = 167
+11/11/2024 03:33:54 - INFO - __main__ -   Instantaneous batch size per device = 2
+11/11/2024 03:33:54 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 2
+11/11/2024 03:33:54 - INFO - __main__ -   Gradient Accumulation steps = 1
+11/11/2024 03:33:54 - INFO - __main__ -   Total optimization steps = 500
+11/11/2024 03:34:01 - INFO - root - {'loss': 0.9430093765258789, 'lr': 0.0001}
+11/11/2024 03:34:03 - INFO - root - {'loss': 0.6922104358673096, 'lr': 0.0001}
+11/11/2024 03:34:04 - INFO - root - {'loss': 1.037453293800354, 'lr': 0.0001}
+11/11/2024 03:34:07 - INFO - root - {'loss': 0.6436105966567993, 'lr': 0.0001}
+11/11/2024 03:34:08 - INFO - root - {'loss': 0.7258249521255493, 'lr': 0.0001}
+11/11/2024 03:34:09 - INFO - root - {'loss': 1.1813256740570068, 'lr': 0.0001}
+11/11/2024 03:34:12 - INFO - root - {'loss': 0.6411161422729492, 'lr': 0.0001}
+11/11/2024 03:34:14 - INFO - root - {'loss': 0.7484000325202942, 'lr': 0.0001}
+11/11/2024 03:34:14 - INFO - root - {'loss': 0.9749983549118042, 'lr': 0.0001}
+11/11/2024 03:34:17 - INFO - root - {'loss': 0.7040353417396545, 'lr': 0.0001}
+11/11/2024 03:34:19 - INFO - root - {'loss': 0.6665154099464417, 'lr': 0.0001}
+11/11/2024 03:34:20 - INFO - root - {'loss': 0.6306324601173401, 'lr': 0.0001}
+11/11/2024 03:34:22 - INFO - root - {'loss': 0.9100905656814575, 'lr': 0.0001}
+11/11/2024 03:34:24 - INFO - root - {'loss': 0.6516218781471252, 'lr': 0.0001}
+11/11/2024 03:34:25 - INFO - root - {'loss': 0.6338784098625183, 'lr': 0.0001}
+11/11/2024 03:34:28 - INFO - root - {'loss': 0.7221636772155762, 'lr': 0.0001}

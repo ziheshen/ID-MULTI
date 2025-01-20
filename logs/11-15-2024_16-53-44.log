@@ -1,0 +1,178 @@
+11/15/2024 16:53:44 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+11/15/2024 16:53:48 - INFO - root - freeze vision encoder
+11/15/2024 16:54:00 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+11/15/2024 16:54:00 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+11/15/2024 16:54:02 - INFO - root - Loading pretrained projection lyer weights.
+11/15/2024 16:54:02 - INFO - root - Loading pretrained text encoder weights.
+11/15/2024 16:54:03 - INFO - root - Loading pretrained vae weights.
+11/15/2024 16:54:03 - INFO - root - Loading pretrained unet weights.
+11/15/2024 16:54:11 - INFO - root - Using xformers.
+11/15/2024 16:54:11 - INFO - root - Building datasets...
+11/15/2024 16:54:21 - INFO - root - freeze vision encoder
+11/15/2024 16:54:58 - INFO - root - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xl.pth
+11/15/2024 16:54:59 - INFO - __main__ - 
+***** Running training *****
+11/15/2024 16:54:59 - INFO - __main__ -   Num examples = 5
+11/15/2024 16:54:59 - INFO - __main__ -   Num batches each epoch = 2
+11/15/2024 16:54:59 - INFO - __main__ -   Num Epochs = 50
+11/15/2024 16:54:59 - INFO - __main__ -   Instantaneous batch size per device = 3
+11/15/2024 16:54:59 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 3
+11/15/2024 16:54:59 - INFO - __main__ -   Gradient Accumulation steps = 1
+11/15/2024 16:54:59 - INFO - __main__ -   Total optimization steps = 100
+11/15/2024 17:00:40 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+11/15/2024 17:00:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/in_the_jungle/
+11/15/2024 17:01:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/in_the_jungle/
+11/15/2024 17:01:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/in_the_jungle/
+11/15/2024 17:01:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/in_the_jungle/
+11/15/2024 17:01:37 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+11/15/2024 17:01:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/in_the_snow/
+11/15/2024 17:02:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/in_the_snow/
+11/15/2024 17:02:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/in_the_snow/
+11/15/2024 17:02:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/in_the_snow/
+11/15/2024 17:02:33 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+11/15/2024 17:02:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_the_beach/
+11/15/2024 17:03:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_the_beach/
+11/15/2024 17:03:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_the_beach/
+11/15/2024 17:03:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_the_beach/
+11/15/2024 17:03:28 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+11/15/2024 17:03:42 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_a_cobblestone_street/
+11/15/2024 17:03:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_a_cobblestone_street/
+11/15/2024 17:04:09 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_a_cobblestone_street/
+11/15/2024 17:04:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_a_cobblestone_street/
+11/15/2024 17:04:23 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+11/15/2024 17:04:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_pink_fabric/
+11/15/2024 17:04:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_pink_fabric/
+11/15/2024 17:05:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_pink_fabric/
+11/15/2024 17:05:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_pink_fabric/
+11/15/2024 17:05:18 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+11/15/2024 17:05:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/15/2024 17:05:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/15/2024 17:06:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/15/2024 17:06:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/15/2024 17:06:13 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+11/15/2024 17:06:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_city_in_the_background/
+11/15/2024 17:06:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_city_in_the_background/
+11/15/2024 17:06:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_city_in_the_background/
+11/15/2024 17:07:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_city_in_the_background/
+11/15/2024 17:07:08 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+11/15/2024 17:07:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_mountain_in_the_background/
+11/15/2024 17:07:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_mountain_in_the_background/
+11/15/2024 17:07:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_mountain_in_the_background/
+11/15/2024 17:08:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_mountain_in_the_background/
+11/15/2024 17:08:04 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+11/15/2024 17:08:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/15/2024 17:08:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/15/2024 17:08:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/15/2024 17:08:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/15/2024 17:08:59 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+11/15/2024 17:09:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/15/2024 17:09:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/15/2024 17:09:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/15/2024 17:09:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/15/2024 17:09:54 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+11/15/2024 17:10:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/15/2024 17:10:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/15/2024 17:10:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/15/2024 17:10:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/15/2024 17:10:49 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+11/15/2024 17:11:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/15/2024 17:11:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/15/2024 17:11:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/15/2024 17:11:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/15/2024 17:11:45 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+11/15/2024 17:11:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/15/2024 17:12:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/15/2024 17:12:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/15/2024 17:12:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/15/2024 17:12:40 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+11/15/2024 17:12:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/floating_on_top_of_water/
+11/15/2024 17:13:08 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/floating_on_top_of_water/
+11/15/2024 17:13:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/floating_on_top_of_water/
+11/15/2024 17:13:35 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/floating_on_top_of_water/
+11/15/2024 17:13:35 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+11/15/2024 17:13:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/15/2024 17:14:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/15/2024 17:14:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/15/2024 17:14:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/15/2024 17:14:30 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+11/15/2024 17:14:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/15/2024 17:14:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/15/2024 17:15:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/15/2024 17:15:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/15/2024 17:15:26 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+11/15/2024 17:15:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_mirror/
+11/15/2024 17:15:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_mirror/
+11/15/2024 17:16:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_mirror/
+11/15/2024 17:16:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_mirror/
+11/15/2024 17:16:21 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+11/15/2024 17:16:35 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/15/2024 17:16:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/15/2024 17:17:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/15/2024 17:17:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/15/2024 17:17:16 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+11/15/2024 17:17:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_dirt_road/
+11/15/2024 17:17:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_dirt_road/
+11/15/2024 17:17:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_dirt_road/
+11/15/2024 17:18:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_dirt_road/
+11/15/2024 17:18:11 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+11/15/2024 17:18:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_white_rug/
+11/15/2024 17:18:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_white_rug/
+11/15/2024 17:18:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_white_rug/
+11/15/2024 17:19:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/on_top_of_a_white_rug/
+11/15/2024 17:19:07 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+11/15/2024 17:19:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/red/
+11/15/2024 17:19:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/red/
+11/15/2024 17:19:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/red/
+11/15/2024 17:20:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/red/
+11/15/2024 17:20:02 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+11/15/2024 17:20:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/purple/
+11/15/2024 17:20:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/purple/
+11/15/2024 17:20:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/purple/
+11/15/2024 17:20:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/purple/
+11/15/2024 17:20:57 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+11/15/2024 17:21:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/shiny/
+11/15/2024 17:21:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/shiny/
+11/15/2024 17:21:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/shiny/
+11/15/2024 17:21:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/shiny/
+11/15/2024 17:21:52 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+11/15/2024 17:22:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/wet/
+11/15/2024 17:22:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/wet/
+11/15/2024 17:22:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/wet/
+11/15/2024 17:22:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/wet/
+11/15/2024 17:22:47 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+11/15/2024 17:23:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/cube_shaped/
+11/15/2024 17:23:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/cube_shaped/
+11/15/2024 17:23:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/cube_shaped/
+11/15/2024 17:23:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/wolf_plushie/checkpoint-100/images/cube_shaped/

@@ -1,0 +1,19 @@
+10/28/2024 03:43:05 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+10/28/2024 03:43:07 - INFO - root - freeze vision encoder
+10/28/2024 03:43:15 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+10/28/2024 03:43:15 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+10/28/2024 03:43:17 - INFO - root - Loading pretrained projection lyer weights.
+10/28/2024 03:43:17 - INFO - root - Loading pretrained text encoder weights.
+10/28/2024 03:43:17 - INFO - root - Loading pretrained vae weights.
+10/28/2024 03:43:17 - INFO - root - Loading pretrained unet weights.
+10/28/2024 03:43:23 - INFO - root - Using xformers.
+10/28/2024 03:43:23 - INFO - root - Building datasets...
+10/28/2024 03:43:34 - INFO - root - freeze vision encoder
+10/28/2024 03:44:10 - INFO - root - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xl.pth

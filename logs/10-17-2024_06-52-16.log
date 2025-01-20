@@ -1,0 +1,25 @@
+10/17/2024 06:52:16 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+10/17/2024 06:52:16 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+10/17/2024 06:52:22 - INFO - root - freeze vision encoder
+10/17/2024 06:52:25 - INFO - root - Loaded ViT-H-14 model config.
+10/17/2024 06:52:30 - INFO - root - Loading pretrained ViT-H-14 weights (laion2b_s32b_b79k).
+10/17/2024 06:52:36 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/diffusers/configuration_utils.py:215: FutureWarning: It is deprecated to pass a pretrained model name or path to `from_config`.If you were trying to load a scheduler, please use <class 'diffusers.schedulers.scheduling_ddpm.DDPMScheduler'>.from_pretrained(...) instead. Otherwise, please make sure to pass a configuration dictionary instead. This functionality will be removed in v1.0.0.
+  deprecate("config-passed-as-path", "1.0.0", deprecation_message, standard_warn=False)
+
+10/17/2024 06:52:36 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+10/17/2024 06:52:36 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+10/17/2024 06:52:38 - INFO - root - Loading pretrained projection lyer weights.
+10/17/2024 06:52:38 - INFO - root - Loading pretrained text encoder weights.
+10/17/2024 06:52:38 - INFO - root - Loading pretrained vae weights.
+10/17/2024 06:52:39 - INFO - root - Loading pretrained unet weights.
+10/17/2024 06:52:45 - INFO - root - Using xformers.
+10/17/2024 06:52:45 - INFO - root - Building datasets...

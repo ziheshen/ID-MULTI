@@ -1,0 +1,61 @@
+07/03/2024 15:09:39 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+07/03/2024 15:09:39 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+07/03/2024 15:09:41 - INFO - root - freeze vision encoder
+07/03/2024 15:09:45 - INFO - root - Loaded ViT-H-14 model config.
+07/03/2024 15:09:50 - INFO - root - Loading pretrained ViT-H-14 weights (laion2b_s32b_b79k).
+07/03/2024 15:09:54 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/diffusers/configuration_utils.py:215: FutureWarning: It is deprecated to pass a pretrained model name or path to `from_config`.If you were trying to load a scheduler, please use <class 'diffusers.schedulers.scheduling_ddpm.DDPMScheduler'>.from_pretrained(...) instead. Otherwise, please make sure to pass a configuration dictionary instead. This functionality will be removed in v1.0.0.
+  deprecate("config-passed-as-path", "1.0.0", deprecation_message, standard_warn=False)
+
+07/03/2024 15:09:54 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+07/03/2024 15:09:54 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+07/03/2024 15:09:56 - INFO - root - Loading pretrained projection lyer weights.
+07/03/2024 15:09:56 - INFO - root - Loading pretrained text encoder weights.
+07/03/2024 15:09:57 - INFO - root - Loading pretrained vae weights.
+07/03/2024 15:09:57 - INFO - root - Loading pretrained unet weights.
+07/03/2024 15:10:03 - INFO - root - Using xformers.
+07/03/2024 15:10:03 - INFO - root - Building datasets...
+07/03/2024 15:10:04 - INFO - __main__ - 
+***** Running training *****
+07/03/2024 15:10:04 - INFO - __main__ -   Num examples = 4
+07/03/2024 15:10:04 - INFO - __main__ -   Num batches each epoch = 2
+07/03/2024 15:10:04 - INFO - __main__ -   Num Epochs = 30
+07/03/2024 15:10:04 - INFO - __main__ -   Instantaneous batch size per device = 2
+07/03/2024 15:10:04 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 2
+07/03/2024 15:10:04 - INFO - __main__ -   Gradient Accumulation steps = 1
+07/03/2024 15:10:04 - INFO - __main__ -   Total optimization steps = 60
+07/03/2024 15:10:05 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/torch/backends/cuda/__init__.py:342: FutureWarning: torch.backends.cuda.sdp_kernel() is deprecated. In the future, this context manager will be removed. Please see, torch.nn.attention.sdpa_kernel() for the new context manager, with updated signature.
+  warnings.warn(
+
+07/03/2024 15:10:46 - INFO - accelerate.accelerator - Saving current state to /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-20
+07/03/2024 15:10:46 - WARNING - accelerate.utils.other - Removed shared tensor {'blip.Qformer.cls.predictions.decoder.weight', 'blip.Qformer.cls.predictions.decoder.bias'} while saving. This should be OK, but check by verifying that you don't receive any warning while reloading
+07/03/2024 15:10:59 - INFO - accelerate.checkpointing - Model weights saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-20/model.safetensors
+07/03/2024 15:11:06 - INFO - accelerate.checkpointing - Optimizer state saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-20/optimizer.bin
+07/03/2024 15:11:06 - INFO - accelerate.checkpointing - Scheduler state saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-20/scheduler.bin
+07/03/2024 15:11:06 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-20/sampler.bin
+07/03/2024 15:11:06 - INFO - accelerate.checkpointing - Random states saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-20/random_states_0.pkl
+07/03/2024 15:11:06 - INFO - __main__ - Saved state to /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-20
+07/03/2024 15:11:48 - INFO - accelerate.accelerator - Saving current state to /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-40
+07/03/2024 15:11:48 - WARNING - accelerate.utils.other - Removed shared tensor {'blip.Qformer.cls.predictions.decoder.weight', 'blip.Qformer.cls.predictions.decoder.bias'} while saving. This should be OK, but check by verifying that you don't receive any warning while reloading
+07/03/2024 15:12:00 - INFO - accelerate.checkpointing - Model weights saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-40/model.safetensors
+07/03/2024 15:12:06 - INFO - accelerate.checkpointing - Optimizer state saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-40/optimizer.bin
+07/03/2024 15:12:06 - INFO - accelerate.checkpointing - Scheduler state saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-40/scheduler.bin
+07/03/2024 15:12:06 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-40/sampler.bin
+07/03/2024 15:12:06 - INFO - accelerate.checkpointing - Random states saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-40/random_states_0.pkl
+07/03/2024 15:12:06 - INFO - __main__ - Saved state to /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-40
+07/03/2024 15:12:49 - INFO - accelerate.accelerator - Saving current state to /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-60
+07/03/2024 15:12:49 - WARNING - accelerate.utils.other - Removed shared tensor {'blip.Qformer.cls.predictions.decoder.weight', 'blip.Qformer.cls.predictions.decoder.bias'} while saving. This should be OK, but check by verifying that you don't receive any warning while reloading
+07/03/2024 15:13:01 - INFO - accelerate.checkpointing - Model weights saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-60/model.safetensors
+07/03/2024 15:13:09 - INFO - accelerate.checkpointing - Optimizer state saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-60/optimizer.bin
+07/03/2024 15:13:09 - INFO - accelerate.checkpointing - Scheduler state saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-60/scheduler.bin
+07/03/2024 15:13:09 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-60/sampler.bin
+07/03/2024 15:13:09 - INFO - accelerate.checkpointing - Random states saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-60/random_states_0.pkl
+07/03/2024 15:13:09 - INFO - __main__ - Saved state to /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0.1_1_0.1/checkpoint-60

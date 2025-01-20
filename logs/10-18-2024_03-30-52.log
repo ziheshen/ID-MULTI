@@ -1,0 +1,9 @@
+10/18/2024 03:30:52 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+10/18/2024 03:30:54 - INFO - root - freeze vision encoder

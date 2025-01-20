@@ -1,0 +1,178 @@
+11/15/2024 12:23:25 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+11/15/2024 12:23:27 - INFO - root - freeze vision encoder
+11/15/2024 12:23:39 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+11/15/2024 12:23:39 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+11/15/2024 12:23:41 - INFO - root - Loading pretrained projection lyer weights.
+11/15/2024 12:23:41 - INFO - root - Loading pretrained text encoder weights.
+11/15/2024 12:23:41 - INFO - root - Loading pretrained vae weights.
+11/15/2024 12:23:42 - INFO - root - Loading pretrained unet weights.
+11/15/2024 12:23:49 - INFO - root - Using xformers.
+11/15/2024 12:23:49 - INFO - root - Building datasets...
+11/15/2024 12:24:00 - INFO - root - freeze vision encoder
+11/15/2024 12:24:35 - INFO - root - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xl.pth
+11/15/2024 12:24:36 - INFO - __main__ - 
+***** Running training *****
+11/15/2024 12:24:36 - INFO - __main__ -   Num examples = 5
+11/15/2024 12:24:36 - INFO - __main__ -   Num batches each epoch = 2
+11/15/2024 12:24:36 - INFO - __main__ -   Num Epochs = 50
+11/15/2024 12:24:36 - INFO - __main__ -   Instantaneous batch size per device = 3
+11/15/2024 12:24:36 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 3
+11/15/2024 12:24:36 - INFO - __main__ -   Gradient Accumulation steps = 1
+11/15/2024 12:24:36 - INFO - __main__ -   Total optimization steps = 100
+11/15/2024 12:30:10 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+11/15/2024 12:30:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/in_the_jungle/
+11/15/2024 12:30:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/in_the_jungle/
+11/15/2024 12:30:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/in_the_jungle/
+11/15/2024 12:31:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/in_the_jungle/
+11/15/2024 12:31:06 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+11/15/2024 12:31:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/in_the_snow/
+11/15/2024 12:31:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/in_the_snow/
+11/15/2024 12:31:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/in_the_snow/
+11/15/2024 12:32:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/in_the_snow/
+11/15/2024 12:32:02 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+11/15/2024 12:32:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_the_beach/
+11/15/2024 12:32:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_the_beach/
+11/15/2024 12:32:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_the_beach/
+11/15/2024 12:32:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_the_beach/
+11/15/2024 12:32:57 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+11/15/2024 12:33:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_a_cobblestone_street/
+11/15/2024 12:33:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_a_cobblestone_street/
+11/15/2024 12:33:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_a_cobblestone_street/
+11/15/2024 12:33:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_a_cobblestone_street/
+11/15/2024 12:33:53 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+11/15/2024 12:34:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_pink_fabric/
+11/15/2024 12:34:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_pink_fabric/
+11/15/2024 12:34:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_pink_fabric/
+11/15/2024 12:34:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_pink_fabric/
+11/15/2024 12:34:48 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+11/15/2024 12:35:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/15/2024 12:35:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/15/2024 12:35:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/15/2024 12:35:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/15/2024 12:35:43 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+11/15/2024 12:35:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_city_in_the_background/
+11/15/2024 12:36:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_city_in_the_background/
+11/15/2024 12:36:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_city_in_the_background/
+11/15/2024 12:36:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_city_in_the_background/
+11/15/2024 12:36:39 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+11/15/2024 12:36:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_mountain_in_the_background/
+11/15/2024 12:37:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_mountain_in_the_background/
+11/15/2024 12:37:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_mountain_in_the_background/
+11/15/2024 12:37:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_mountain_in_the_background/
+11/15/2024 12:37:34 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+11/15/2024 12:37:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/15/2024 12:38:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/15/2024 12:38:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/15/2024 12:38:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/15/2024 12:38:29 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+11/15/2024 12:38:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/15/2024 12:38:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/15/2024 12:39:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/15/2024 12:39:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/15/2024 12:39:25 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+11/15/2024 12:39:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/15/2024 12:39:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/15/2024 12:40:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/15/2024 12:40:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/15/2024 12:40:20 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+11/15/2024 12:40:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/15/2024 12:40:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/15/2024 12:41:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/15/2024 12:41:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/15/2024 12:41:15 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+11/15/2024 12:41:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/15/2024 12:41:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/15/2024 12:41:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/15/2024 12:42:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/15/2024 12:42:10 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+11/15/2024 12:42:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/floating_on_top_of_water/
+11/15/2024 12:42:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/floating_on_top_of_water/
+11/15/2024 12:42:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/floating_on_top_of_water/
+11/15/2024 12:43:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/floating_on_top_of_water/
+11/15/2024 12:43:06 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+11/15/2024 12:43:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/15/2024 12:43:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/15/2024 12:43:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/15/2024 12:44:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/15/2024 12:44:01 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+11/15/2024 12:44:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/15/2024 12:44:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/15/2024 12:44:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/15/2024 12:44:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/15/2024 12:44:56 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+11/15/2024 12:45:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_mirror/
+11/15/2024 12:45:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_mirror/
+11/15/2024 12:45:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_mirror/
+11/15/2024 12:45:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_mirror/
+11/15/2024 12:45:52 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+11/15/2024 12:46:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/15/2024 12:46:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/15/2024 12:46:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/15/2024 12:46:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/15/2024 12:46:47 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+11/15/2024 12:47:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_dirt_road/
+11/15/2024 12:47:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_dirt_road/
+11/15/2024 12:47:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_dirt_road/
+11/15/2024 12:47:42 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_dirt_road/
+11/15/2024 12:47:42 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+11/15/2024 12:47:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_white_rug/
+11/15/2024 12:48:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_white_rug/
+11/15/2024 12:48:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_white_rug/
+11/15/2024 12:48:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/on_top_of_a_white_rug/
+11/15/2024 12:48:37 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+11/15/2024 12:48:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/red/
+11/15/2024 12:49:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/red/
+11/15/2024 12:49:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/red/
+11/15/2024 12:49:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/red/
+11/15/2024 12:49:33 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+11/15/2024 12:49:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/purple/
+11/15/2024 12:50:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/purple/
+11/15/2024 12:50:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/purple/
+11/15/2024 12:50:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/purple/
+11/15/2024 12:50:28 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+11/15/2024 12:50:42 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/shiny/
+11/15/2024 12:50:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/shiny/
+11/15/2024 12:51:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/shiny/
+11/15/2024 12:51:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/shiny/
+11/15/2024 12:51:23 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+11/15/2024 12:51:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/wet/
+11/15/2024 12:51:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/wet/
+11/15/2024 12:52:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/wet/
+11/15/2024 12:52:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/wet/
+11/15/2024 12:52:19 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+11/15/2024 12:52:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/cube_shaped/
+11/15/2024 12:52:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/cube_shaped/
+11/15/2024 12:53:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/cube_shaped/
+11/15/2024 12:53:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp2/monster_toy/checkpoint-100/images/cube_shaped/

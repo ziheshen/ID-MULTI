@@ -1,0 +1,178 @@
+11/17/2024 20:24:05 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+11/17/2024 20:24:09 - INFO - root - freeze vision encoder
+11/17/2024 20:24:19 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+11/17/2024 20:24:19 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+11/17/2024 20:24:21 - INFO - root - Loading pretrained projection lyer weights.
+11/17/2024 20:24:21 - INFO - root - Loading pretrained text encoder weights.
+11/17/2024 20:24:22 - INFO - root - Loading pretrained vae weights.
+11/17/2024 20:24:23 - INFO - root - Loading pretrained unet weights.
+11/17/2024 20:24:30 - INFO - root - Using xformers.
+11/17/2024 20:24:30 - INFO - root - Building datasets...
+11/17/2024 20:24:41 - INFO - root - freeze vision encoder
+11/17/2024 20:25:17 - INFO - root - load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xl.pth
+11/17/2024 20:25:19 - INFO - __main__ - 
+***** Running training *****
+11/17/2024 20:25:19 - INFO - __main__ -   Num examples = 5
+11/17/2024 20:25:19 - INFO - __main__ -   Num batches each epoch = 2
+11/17/2024 20:25:19 - INFO - __main__ -   Num Epochs = 50
+11/17/2024 20:25:19 - INFO - __main__ -   Instantaneous batch size per device = 3
+11/17/2024 20:25:19 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 3
+11/17/2024 20:25:19 - INFO - __main__ -   Gradient Accumulation steps = 1
+11/17/2024 20:25:19 - INFO - __main__ -   Total optimization steps = 100
+11/17/2024 20:30:08 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the jungle.
+11/17/2024 20:30:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/in_the_jungle/
+11/17/2024 20:30:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/in_the_jungle/
+11/17/2024 20:30:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/in_the_jungle/
+11/17/2024 20:31:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/in_the_jungle/
+11/17/2024 20:31:05 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:in the snow.
+11/17/2024 20:31:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/in_the_snow/
+11/17/2024 20:31:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/in_the_snow/
+11/17/2024 20:31:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/in_the_snow/
+11/17/2024 20:31:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/in_the_snow/
+11/17/2024 20:31:59 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on the beach.
+11/17/2024 20:32:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_the_beach/
+11/17/2024 20:32:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_the_beach/
+11/17/2024 20:32:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_the_beach/
+11/17/2024 20:32:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_the_beach/
+11/17/2024 20:32:53 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on a cobblestone street.
+11/17/2024 20:33:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_a_cobblestone_street/
+11/17/2024 20:33:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_a_cobblestone_street/
+11/17/2024 20:33:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_a_cobblestone_street/
+11/17/2024 20:33:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_a_cobblestone_street/
+11/17/2024 20:33:48 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of pink fabric.
+11/17/2024 20:34:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_pink_fabric/
+11/17/2024 20:34:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_pink_fabric/
+11/17/2024 20:34:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_pink_fabric/
+11/17/2024 20:34:42 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_pink_fabric/
+11/17/2024 20:34:42 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a wooden floor.
+11/17/2024 20:34:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/17/2024 20:35:09 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/17/2024 20:35:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/17/2024 20:35:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_wooden_floor/
+11/17/2024 20:35:36 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a city in the background.
+11/17/2024 20:35:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_city_in_the_background/
+11/17/2024 20:36:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_city_in_the_background/
+11/17/2024 20:36:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_city_in_the_background/
+11/17/2024 20:36:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_city_in_the_background/
+11/17/2024 20:36:30 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a mountain in the background.
+11/17/2024 20:36:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_mountain_in_the_background/
+11/17/2024 20:36:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_mountain_in_the_background/
+11/17/2024 20:37:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_mountain_in_the_background/
+11/17/2024 20:37:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_mountain_in_the_background/
+11/17/2024 20:37:25 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a blue house in the background.
+11/17/2024 20:37:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/17/2024 20:37:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/17/2024 20:38:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/17/2024 20:38:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_blue_house_in_the_background/
+11/17/2024 20:38:19 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a purple rug in a forest.
+11/17/2024 20:38:33 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/17/2024 20:38:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/17/2024 20:39:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/17/2024 20:39:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_purple_rug_in_a_forest/
+11/17/2024 20:39:13 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a wheat field in the background.
+11/17/2024 20:39:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/17/2024 20:39:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/17/2024 20:39:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/17/2024 20:40:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_wheat_field_in_the_background/
+11/17/2024 20:40:07 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with a tree and autumn leaves in the background.
+11/17/2024 20:40:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/17/2024 20:40:35 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/17/2024 20:40:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/17/2024 20:41:02 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_a_tree_and_autumn_leaves_in_the_background/
+11/17/2024 20:41:02 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:with the Eiffel Tower in the background.
+11/17/2024 20:41:15 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/17/2024 20:41:29 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/17/2024 20:41:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/17/2024 20:41:56 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/with_the_Eiffel_Tower_in_the_background/
+11/17/2024 20:41:56 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating on top of water.
+11/17/2024 20:42:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/floating_on_top_of_water/
+11/17/2024 20:42:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/floating_on_top_of_water/
+11/17/2024 20:42:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/floating_on_top_of_water/
+11/17/2024 20:42:51 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/floating_on_top_of_water/
+11/17/2024 20:42:51 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:floating in an ocean of milk.
+11/17/2024 20:43:04 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/17/2024 20:43:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/17/2024 20:43:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/17/2024 20:43:45 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/floating_in_an_ocean_of_milk/
+11/17/2024 20:43:45 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of green grass with sunflowers around it.
+11/17/2024 20:43:59 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/17/2024 20:44:12 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/17/2024 20:44:26 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/17/2024 20:44:39 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_green_grass_with_sunflowers_around_it/
+11/17/2024 20:44:39 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a mirror.
+11/17/2024 20:44:53 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_mirror/
+11/17/2024 20:45:06 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_mirror/
+11/17/2024 20:45:20 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_mirror/
+11/17/2024 20:45:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_mirror/
+11/17/2024 20:45:34 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of the sidewalk in a crowded street.
+11/17/2024 20:45:47 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/17/2024 20:46:01 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/17/2024 20:46:14 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/17/2024 20:46:28 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_the_sidewalk_in_a_crowded_street/
+11/17/2024 20:46:28 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a dirt road.
+11/17/2024 20:46:41 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_dirt_road/
+11/17/2024 20:46:55 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_dirt_road/
+11/17/2024 20:47:09 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_dirt_road/
+11/17/2024 20:47:22 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_dirt_road/
+11/17/2024 20:47:22 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:on top of a white rug.
+11/17/2024 20:47:36 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_white_rug/
+11/17/2024 20:47:49 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_white_rug/
+11/17/2024 20:48:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_white_rug/
+11/17/2024 20:48:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/on_top_of_a_white_rug/
+11/17/2024 20:48:17 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:red.
+11/17/2024 20:48:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/red/
+11/17/2024 20:48:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/red/
+11/17/2024 20:48:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/red/
+11/17/2024 20:49:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/red/
+11/17/2024 20:49:11 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:purple.
+11/17/2024 20:49:25 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/purple/
+11/17/2024 20:49:38 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/purple/
+11/17/2024 20:49:52 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/purple/
+11/17/2024 20:50:05 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/purple/
+11/17/2024 20:50:05 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:shiny.
+11/17/2024 20:50:19 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/shiny/
+11/17/2024 20:50:32 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/shiny/
+11/17/2024 20:50:46 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/shiny/
+11/17/2024 20:51:00 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/shiny/
+11/17/2024 20:51:00 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:wet.
+11/17/2024 20:51:13 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/wet/
+11/17/2024 20:51:27 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/wet/
+11/17/2024 20:51:40 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/wet/
+11/17/2024 20:51:54 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/wet/
+11/17/2024 20:51:54 - INFO - __main__ - Running validation... 
+ Generating 4 images with prompt:cube shaped.
+11/17/2024 20:52:07 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/cube_shaped/
+11/17/2024 20:52:21 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/cube_shaped/
+11/17/2024 20:52:34 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/cube_shaped/
+11/17/2024 20:52:48 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/exp3/colorful_sneaker/checkpoint-100/images/cube_shaped/

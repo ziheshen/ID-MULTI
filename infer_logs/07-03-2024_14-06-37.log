@@ -1,0 +1,51 @@
+07/03/2024 14:06:37 - INFO - root - Using CUDA device: NVIDIA GeForce RTX 3090
+07/03/2024 14:06:37 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+07/03/2024 14:06:39 - INFO - root - freeze vision encoder
+07/03/2024 14:06:42 - INFO - root - Loaded ViT-H-14 model config.
+07/03/2024 14:06:47 - INFO - root - Loading pretrained ViT-H-14 weights (laion2b_s32b_b79k).
+07/03/2024 14:06:52 - WARNING - py.warnings - /shenzihe/venv/lib/python3.10/site-packages/diffusers/configuration_utils.py:215: FutureWarning: It is deprecated to pass a pretrained model name or path to `from_config`.If you were trying to load a scheduler, please use <class 'diffusers.schedulers.scheduling_ddpm.DDPMScheduler'>.from_pretrained(...) instead. Otherwise, please make sure to pass a configuration dictionary instead. This functionality will be removed in v1.0.0.
+  deprecate("config-passed-as-path", "1.0.0", deprecation_message, standard_warn=False)
+
+07/03/2024 14:06:52 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+07/03/2024 14:06:52 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+07/03/2024 14:06:54 - INFO - root - Loading pretrained projection lyer weights.
+07/03/2024 14:06:54 - INFO - root - Loading pretrained text encoder weights.
+07/03/2024 14:06:54 - INFO - root - Loading pretrained vae weights.
+07/03/2024 14:06:55 - INFO - root - Loading pretrained unet weights.
+07/03/2024 14:07:00 - INFO - root - Loading finetuned model from /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000...
+07/03/2024 14:07:05 - INFO - root - Missing keys ['blip.Qformer.cls.predictions.decoder.weight', 'blip.Qformer.cls.predictions.decoder.bias']
+07/03/2024 14:07:05 - INFO - root - load checkpoint from /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/model.safetensors
+07/03/2024 14:07:05 - INFO - root - Sample: {'ref_images': <PIL.PngImagePlugin.PngImageFile image mode=RGB size=570x363 at 0x7FAD5359A4D0>, 'cond_images': None, 'cond_subject': ['mit_mascot'], 'tgt_subject': ['mit_mascot'], 'prompt': ['in the jungle']}
+07/03/2024 14:07:06 - WARNING - py.warnings - /shenzihe/multi_BlipDisenBooth/multi_BD.py:645: FutureWarning: Accessing config attribute `in_channels` directly via 'UNet2DConditionModel' object attribute is deprecated. Please access 'in_channels' over 'UNet2DConditionModel's config object instead, e.g. 'unet.config.in_channels'.
+  (1, self.unet.in_channels, height // 8, width // 8),
+
+07/03/2024 14:07:06 - WARNING - py.warnings - /shenzihe/multi_BlipDisenBooth/multi_BD.py:651: FutureWarning: Accessing config attribute `in_channels` directly via 'UNet2DConditionModel' object attribute is deprecated. Please access 'in_channels' over 'UNet2DConditionModel's config object instead, e.g. 'unet.config.in_channels'.
+  self.unet.in_channels,
+
+07/03/2024 14:07:18 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/in_the_jungle/
+07/03/2024 14:07:31 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/in_the_jungle/
+07/03/2024 14:07:44 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/in_the_jungle/
+07/03/2024 14:07:58 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/in_the_jungle/
+07/03/2024 14:07:58 - INFO - root - Sample: {'ref_images': <PIL.PngImagePlugin.PngImageFile image mode=RGB size=570x363 at 0x7FAD5359A4D0>, 'cond_images': None, 'cond_subject': ['mit_mascot'], 'tgt_subject': ['mit_mascot'], 'prompt': ['in the snow']}
+07/03/2024 14:08:11 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/in_the_snow/
+07/03/2024 14:08:24 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/in_the_snow/
+07/03/2024 14:08:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/in_the_snow/
+07/03/2024 14:08:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/in_the_snow/
+07/03/2024 14:08:50 - INFO - root - Sample: {'ref_images': <PIL.PngImagePlugin.PngImageFile image mode=RGB size=570x363 at 0x7FAD5359A4D0>, 'cond_images': None, 'cond_subject': ['mit_mascot'], 'tgt_subject': ['mit_mascot'], 'prompt': ['on the beach']}
+07/03/2024 14:09:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_the_beach/
+07/03/2024 14:09:17 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_the_beach/
+07/03/2024 14:09:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_the_beach/
+07/03/2024 14:09:43 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_the_beach/
+07/03/2024 14:09:43 - INFO - root - Sample: {'ref_images': <PIL.PngImagePlugin.PngImageFile image mode=RGB size=570x363 at 0x7FAD5359A4D0>, 'cond_images': None, 'cond_subject': ['mit_mascot'], 'tgt_subject': ['mit_mascot'], 'prompt': ['on a cobblestone street']}
+07/03/2024 14:09:57 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_a_cobblestone_street/
+07/03/2024 14:10:10 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_a_cobblestone_street/
+07/03/2024 14:10:23 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_a_cobblestone_street/
+07/03/2024 14:10:37 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_a_cobblestone_street/
+07/03/2024 14:10:37 - INFO - root - Sample: {'ref_images': <PIL.PngImagePlugin.PngImageFile image mode=RGB size=570x363 at 0x7FAD5359A4D0>, 'cond_images': None, 'cond_subject': ['mit_mascot'], 'tgt_subject': ['mit_mascot'], 'prompt': ['on top of pink fabric']}
+07/03/2024 14:10:50 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_top_of_pink_fabric/
+07/03/2024 14:11:03 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_top_of_pink_fabric/
+07/03/2024 14:11:16 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_top_of_pink_fabric/
+07/03/2024 14:11:30 - INFO - root - Image have been saved in /shenzihe/WD-Disk/output/mit_mascot_bsz_2_loss_0_1_1/checkpoint-2000/images/on_top_of_pink_fabric/
+07/03/2024 14:11:30 - INFO - root - Sample: {'ref_images': <PIL.PngImagePlugin.PngImageFile image mode=RGB size=570x363 at 0x7FAD5359A4D0>, 'cond_images': None, 'cond_subject': ['mit_mascot'], 'tgt_subject': ['mit_mascot'], 'prompt': ['on top of a wooden floor']}

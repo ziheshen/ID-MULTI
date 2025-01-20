@@ -1,0 +1,18 @@
+01/15/2025 14:09:34 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cpu
+
+Mixed precision type: fp16
+
+01/15/2025 14:09:36 - INFO - root - freeze vision encoder
+01/15/2025 14:09:45 - INFO - root - Loading pretrained model from /root/.cache/torch/hub/checkpoints/blip-diffusion
+01/15/2025 14:09:45 - INFO - root - Loading pretrained BLIP2 Qformer weights.
+01/15/2025 14:09:46 - INFO - root - Loading pretrained projection lyer weights.
+01/15/2025 14:09:46 - INFO - root - Loading pretrained text encoder weights.
+01/15/2025 14:09:47 - INFO - root - Loading pretrained vae weights.
+01/15/2025 14:09:48 - INFO - root - Loading pretrained unet weights.
+01/15/2025 14:09:52 - INFO - root - Using xformers.
+01/15/2025 14:09:52 - INFO - root - Building datasets...
+01/15/2025 14:10:02 - INFO - root - freeze vision encoder
