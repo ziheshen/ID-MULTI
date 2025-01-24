@@ -29,7 +29,6 @@ from torch.utils.data import Dataset
 from torchvision import transforms
 from tqdm.auto import tqdm
 from transformers import AutoTokenizer, PretrainedConfig
-from disen_net import Image_adapter, cal_cos
 import open_clip
 import torch.nn as nn
 
@@ -57,7 +56,7 @@ from diffusers.optimization import get_scheduler
 # from diffusers.training_utils import unet_lora_state_dict
 from diffusers.utils import check_min_version, is_wandb_available
 from diffusers.utils.import_utils import is_xformers_available
-from multi_BlipDisenBooth.ID_MULTI import MultiBlipDisenBooth
+from ID_MULTI import ID_MULTI
 from dataset import SubjectDrivenTextToImageDataset, collate_fn
 from transformers.activations import QuickGELUActivation as QuickGELU
 from utils import train_parse_args
@@ -132,7 +131,7 @@ def train(args):
         weight_dtype = torch.float32
     
     # Load model
-    model = MultiBlipDisenBooth(args)
+    model = ID_MULTI(args)
     # with open('/LAVIS/multi_BlipDisenBooth/multi_BLIP_DisenBooth.txt', 'w') as f:
     #         for name, param in model.named_parameters():
     #             f.write(f"{name}:\n")
@@ -335,7 +334,8 @@ def train(args):
     
     
     from tqdm.contrib.logging import logging_redirect_tqdm
-
+    # print(list(train_dataloader))
+    # return
     with logging_redirect_tqdm():
         for epoch in range(first_epoch, args.num_train_epochs):
             model.train()
@@ -433,6 +433,7 @@ def train(args):
                             "cond_subject": [args.subject_text],
                             "tgt_subject": [args.subject_text],
                             "prompt": [prompt],
+                            "subjects_position": [list(train_dataloader)[0]['subjects_position'][0]]
                         }
                         if prompt in {'red','purple','shiny','wet','cube shaped'}:
                             samples["tgt_subject"] = [f"{prompt} {args.subject_text[0]}"]

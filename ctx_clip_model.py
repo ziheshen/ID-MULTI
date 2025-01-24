@@ -340,8 +340,8 @@ class CtxCLIPTextEmbeddings(nn.Module):
                         
                         ctx_embed = ctx_embeddings[subject][i]
                         prefix = sample_inputs_embeds[:(pos+ j*16)]
-                        suffix = sample_inputs_embeds[pos:]
-                        # print(subject, pos+ j*16, prefix.shape, ctx_embed.shape, suffix.shape)
+                        suffix = sample_inputs_embeds[(pos+ j*16):]
+                        # print(subject, pos+ j*16, sample_inputs_embeds.shape, prefix.shape, ctx_embed.shape, suffix.shape)
                         # 插入ctx_embed
                         sample_inputs_embeds = torch.cat([prefix, ctx_embed, suffix], dim=0)
                     input_embeds_ctx.append(sample_inputs_embeds)
@@ -368,7 +368,7 @@ class CtxCLIPTextEmbeddings(nn.Module):
             position_ids = self.position_ids[:, :seq_length]
         
         position_embeddings = self.position_embedding(position_ids)
-        # print(inputs_embeds.shape, position_embeddings.shape)
+        # print(seq_length, inputs_embeds.shape, position_embeddings.shape)
         embeddings = inputs_embeds + position_embeddings
 
         return embeddings

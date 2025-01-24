@@ -61,7 +61,7 @@ class ProjLayer(nn.Module):
 
         return x
     
-class MultiBlipDisenBooth(nn.Module):
+class ID_MULTI(nn.Module):
     def __init__(
         self,
         args,
@@ -86,7 +86,7 @@ class MultiBlipDisenBooth(nn.Module):
         
         ### Identity-relevent Branch ###
         # BLIP2 QFormer
-        self.num_query_token = args.qformer_num_query_token
+        self.num_query_token = args.qformer_num_query_token * len(args.subject_text)
         # self.subject_text = args.validation_prompt
         
 
@@ -520,7 +520,7 @@ class MultiBlipDisenBooth(nn.Module):
         )
 
         text_embeddings = self._forward_prompt_embeddings(
-            cond_image, cond_subject[0], prompt
+            cond_image, cond_subject[0], prompt, samples['subjects_position']
         )        
 
         # 3. unconditional embedding
@@ -672,7 +672,7 @@ class MultiBlipDisenBooth(nn.Module):
         for prompt, tgt_subject in zip(prompts, tgt_subjects):
             t = 'a'
             for i, subject in enumerate(tgt_subject):
-                t += f" {tgt_subject} " if i==0 else f"and {tgt_subject} "
+                t += f" {subject} " if i==0 else f"and a {subject} "
             t += f"{prompt.strip()}"
             # a trick to amplify the prompt
             rv.append(", ".join([t] * int(prompt_strength * prompt_reps)))
@@ -696,7 +696,7 @@ class MultiBlipDisenBooth(nn.Module):
 
         return tokenized_text
     
-    def _forward_prompt_embeddings(self, input_image, src_subjects, prompt):
+    def _forward_prompt_embeddings(self, input_image, src_subjects, prompt, subjects_position):
         # 1. extract BLIP query features and proj to text space -> (bs, 32, 768)
         query_embeds={}
         for src_subject in src_subjects:
@@ -707,6 +707,7 @@ class MultiBlipDisenBooth(nn.Module):
         text_embeddings, _ = self.ctx_clip_encoder.transformer(
             input_ids=tokenized_prompt.input_ids,
             ctx_embeddings=query_embeds,
+            subjects_position=subjects_position
         )
 
         return text_embeddings[0]
