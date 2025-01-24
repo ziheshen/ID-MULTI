@@ -1,8 +1,0 @@
-01/15/2025 13:52:46 - INFO - __main__ - Distributed environment: NO
-Num processes: 1
-Process index: 0
-Local process index: 0
-Device: cpu
-
-Mixed precision type: fp16
-

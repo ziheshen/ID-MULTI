@@ -1,9 +1,0 @@
-01/15/2025 14:06:26 - INFO - __main__ - Distributed environment: NO
-Num processes: 1
-Process index: 0
-Local process index: 0
-Device: cpu
-
-Mixed precision type: fp16
-
-01/15/2025 14:06:28 - INFO - root - freeze vision encoder

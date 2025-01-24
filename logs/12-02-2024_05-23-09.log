@@ -1,8 +1,0 @@
-12/02/2024 05:23:09 - INFO - __main__ - Distributed environment: NO
-Num processes: 1
-Process index: 0
-Local process index: 0
-Device: cuda
-
-Mixed precision type: no
-
